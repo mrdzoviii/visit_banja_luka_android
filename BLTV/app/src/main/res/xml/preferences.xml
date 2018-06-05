@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="language"
+        android:summary="@string/language_msg"
+        android:title="@string/language"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:defaultValue="en"
+        />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="caching"
+        android:summary="@string/caching_msg"
+        android:title="@string/caching" />
+</PreferenceScreen>

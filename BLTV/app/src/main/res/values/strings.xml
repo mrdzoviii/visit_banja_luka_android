@@ -1,0 +1,475 @@
+<resources>
+    <string name="app_name">Visit Banja Luka</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_news">News</string>
+    <string name="nav_weather">Weather</string>
+    <string name="nav_manage">Settings</string>
+    <string name="nav_about">About</string>
+    <string name="version">1.00</string>
+    <string name="tab_institutions">Institutions</string>
+    <string name="tab_monuments">Monuments</string>
+    <string name="tab_hotels">Hotels</string>
+    <string name="tab_exit">Exit</string>
+    <string name="tab_weather">Weather</string>
+    <string name="tab_favourites">Favourites</string>
+    <string name="celsius">°C</string>
+    <string name="app_version">App version:</string>
+    <string name="language">Language</string>
+    <string name="language_msg">Select language to use</string>
+    <string name="language_en">English</string>
+    <string name="language_sr">Serbian</string>
+    <string name="caching">Caching</string>
+    <string name="caching_msg">This option if selected will allow us to cache news</string>
+    <string name="current_temperature">Current Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="content_description">Content Description</string>
+    <string name="tab_events">Events</string>
+    <string name="like_button">Like</string>
+    <string name="search_hint">Search</string>
+    <string name="database_name">bltv_db</string>
+    <string name="pull_news">http://dtp.nezavisne.com/app/rubrika/11/1/15</string>
+    <string name="pull_article">http://dtp.nezavisne.com/app/v2/vijesti/</string>
+    <string name="pull_weather">http://api.openweathermap.org/data/2.5/weather?q=Banja%20Luka,ba&amp;appid=3d27163de85684aaec32e42fa535675d</string>
+    <string name="pull_icon">http://openweathermap.org/img/w/</string>
+    <string name="pull_forecast">http://api.openweathermap.org/data/2.5/forecast?q=Banja%20Luka,,ba&amp;appid=137c3ccb11956779b7646b0aa2a01a6e</string>
+    <string name="kastel_name">Tvrđava Kastel</string>
+    <string name="kastel_description"><![CDATA[<p>Tvrđava Kastel je najstariji istorijski spomenik u gradu Banjaluci. Najstariji tragovi naselja na području Banjaluke su ostaci neolitskog gradinskog naselja koji su upravo pronađeni na prostoru gradske tvrđave Kastel. Nalazi se u središnjem dijelu grada, koji dominira lijevom obalom Vrbasa.<h1>Pretpostavke o nastanku tvrđave</h1>O vremenu nastanka ovog objekta ne postoje pouzdani podaci. Međutim, mnoge okolnosti upućuju na zaključak da se upravo tu nalazilo rimsko naselje Castra. Rimljani su bili izloženi čestim nasrtajima varvarskih naroda, a imali su svakako dovoljne jake razloge da brane cestu koja je prolazila kotlinom Vrbasa. U prilog ovakvim tvrdnjama idu i arheološki nalazi koji su pronađeni na prostoru današnjeg Kastela, a odnose se na rimsku keramiku, novac i građevinarstvo. Posebno važan nalaz je antički žrtvenik posvećen bogu Jupiteru pronađen 1885. godine prilikom gradnje mosta preko Crkvene. Takođe, na prostoru tvrđave pronađeni su ostaci Slavenskog naselja iz perioda ranog srednjeg vijeka (od VIII do XII vijeka). U bosanskoj srednjovjekovnoj državi postojao je Vrbaški grad, koji se po jednoj pretpostavci nalazio na mjestu današnjeg Kastela. Međutim, po drugoj pretpostavci, Vrbaški grad se identifikuje sa Podgradcima u Potkozarju.<h1>Intenzivna gradnja tvrđave</h1>Intezivna izgradnja Kastela počinje u pretposljednjoj deceniji XV vijeka, za vrijeme Turske okupacije i vladavine Ferhad paše Sokolovića (1574-1588) koji pored ovog utvrđenja gradi i niz drugih objekata orijentalnog tipa. Ferhad- paša na mjestu današnjeg Kastela prvo gradi svoju utvrđenu tophanu (arsenal), da bi, desetak godina kasnije, tophana prerasla u pravi utvrđeni grad sa kulama i tabijama, koji se neprestano dograđivao. Pošto leži na ušću Crkvene u Vrbas, od tvrđave su bila podignuta dva mosta. Jedan je išao preko Vrbasa, u blizini sadašnjeg Gradskog mosta, a drugi preko Crkvene. Most preko Vrbasa sačuvao se samo u jednoj staroj gravuri. Vrbas i Crkvenu povezivao je veliki opkop (šanac) tako da je tvrđava zapravo, svojevremeno, bila utvrđeno ostrvo kojeg su okruživale vode dviju rijeka. Na zidovima tvrđave je takođe bio i veliki drveni konak koji je gledao na Vrbas, kao i niz zidanih objekata iz perioda dok je u tvrđavi bila austrougarska vojska. Tvrđava ali i grad Banja Luka posebno dobijaju na značaju za vrijeme Austro-Ugarsko-Turskih ratova kao važan geostrateški centar.<h1>Tvrđava danas</h1>U planovima za sanaciju, restauraciju i revitalizaciju Kastela predviđeno je da se jedan dio ovih objekata obnovi, kako bi tvrđava dobila izgled što približniji nekadašnjem. Na prostoru same tvrđave nađeno je dosta arheoloških tragova, iz antičkih vremena, preko već spominjane slavenske nastambe do novijih kultura. U Kastelu se nalazi rimski sarkofag nađen u šargovcu, rimski miljokaz s nekadašnjeg puta Salona- Servitium. Danas je tvrđava Kastel spomenik I kategorije. U prošlosti Kastel je bio jako vojničko utvrđenje i štitio je kotlinu Vrbasa od neprijateljskih naleta. Tvrđava je sa svih strana opasana debelim kamenim zidovima, a u njenoj unutrašnjosti, pored ljetne pozornice, igrališta za djecu i nacionalnog restorana nalazi se i Kamena kuća u funkciji muzeja.</p>]]></string>
+    <string name="kastel_url">https://upload.wikimedia.org/wikipedia/commons/d/dc/Vrbas67657.jpg</string>
+    <string name="kastel_latitude">44.766527</string>
+    <string name="kastel_longitude"> 17.190613</string>
+    <string name="banj_name">Spomenik palim Krajišnicima u NOB-u</string>
+    <string name="banj_description"><![CDATA[<p align="justify"><h1>Lokacija spomenika</h1></p>
+<p align="justify">Spomenik palim Krajišnicima, u Narodno-oslobodilačkoj borbi (1941-1945) protiv fašizma, nalazi se na vrhu Banj brda (431m nadmorske visine) koje dominira Banjalukom. Udaljen je oko 5km od Grada, a put je cjelom dužinom asfaltiran.</p>
+<p align="justify"><h1>Opis spomenika</h1> <br />Spomenik, mauzolejskog tipa (visine 13 m i dužine 24 m), rad je jednog od najvećih jugoslovenskih kipara i majstora memorijalne plastike Antuna Augustinčića. Podignut je na mjestu gdje je, juna 1941, održana Oblasna konferencija Komunističke partije Jugoslavije za Bosansku krajinu i nekoliko savjetovanja vezanih za podizanje ustanka. Izgrađen je od bijelog bračkog kamena.</p>
+<p align="justify">Ima jedinstvenu formu, posebnu dinamičku liniju i gledan iz daljine, djeluje kao metak ispaljen u pravcu Krajine (Kozare i Grmeča).Na pročelju spomenika, iznad ulaznih vrata, nalazi se velika figura nagog mladića koji u ruci drži zastavu. Sa strana Spomenika nalaze se reljefi na kojima je prikazana borba protiv okupatora i poslijeratna izgradanja.</p>
+<p style="justify"><h1>Legenda o šehitima</h1></p>
+<p>Brdo Šehitluci, sa kojeg se pruža vidikovac na centar Banjaluke, dobilo je ime po trojici junaka. Legenda govori o junacima, kojima su u boju odsječene glave sabljama. No, iako su izgubili glave, oni su nastavili put vrha brda zajedno sa glavama u rukama, zastali su na jednom vrelu kako bi oprali svoje okrvavljene vratove, po čemu je vrelo i dobilo ime Vratinac. Izdahnuli su na vrhu brda, na mjestu današnjeg spomenika. Po drugoj verziji ove legende, na tom brdu visokom 431 m, sahranjena su dvojica od trojice turskih šehita (junaka), koji su u boju 1737. godine, posječeni pod Kastelom, ali su se sa galavama u rukama nastavili penjati. Jedan do njih se okrenuo ka gradu i presvisnuo, a preostala dvojica su onako obezglavljena dojahala na vrh brda i tek tamo izdahnuli. Pokopani su u zajednički grob mauzolej, a brdo je po njima nazvano šehitluci.</p>]]></string>
+    <string name="banj_url">https://upload.wikimedia.org/wikipedia/sr/b/b2/Spomenik_palim_Kraji%C5%A1nicima.jpg</string>
+    <string name="banj_latitude">44.743855</string>
+    <string name="banj_longitude">17.163036</string>
+    <string name="hotel_atina_name">Hotel Atina</string>
+    <string name="hotel_atina_rating">4</string>
+    <string name="hotel_atina_url">http://www.banjaluka-tourism.com/images/Smjestaj/atina1.jpg</string>
+    <string name="hotel_atina_description"><![CDATA[<p>Slobodana Kokanovića 5<br />Tel: +387(0)51 961 100<br />Email:<a href="mailto:recepcija@atinahotel.com"> recepcija@atinahotel.com<br /></a>Web:<a href="http://www.atinahotel.com"> www.atinahotel.com</a></p>
+        <p style="text-align: justify;"><span style="text-align: justify;">Hotel "Atina" se nalazi u neposrednoj blizini poslovnog centra grada, na mirnom i tihom mjestu uz rijeku Vrbas. Hotel nudi klimatizovane sobe i apartmane, kao i predsjedničke apartmane. Raspolaže sa 16 soba i 4 apartmana u kojima je raspoređeno 46 kreveta.</span></p>]]></string>
+    <string name="hotel_atina_latitude">44.767091</string>
+    <string name="hotel_atina_longitude">17.194462</string>
+    <string name="title_activity_item_scrolling">ItemScrollingActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="gospodska_name">Gospodska Ulica</string>
+    <string name="gospodska_url">http://banjaluka-tourism.com/images/stories/stranice/Kulturno-istorijski_spomenici/Gospodska_ulica.JPG</string>
+    <string name="cdata"><![CDATA[html]]></string>
+    <string name="gospodska_description"><![CDATA[<div class="itemFullText">
+<p style="text-align: justify;">Gospodska ulica je najpoznatije banjalučko &scaron;etali&scaron;te koje nosi dva imena, jedno je ulica Veselina Masle&scaron;e, a drugo je op&scaron;te poznato ime prihvaćeno u narodu - &ldquo;Gospodska ulica&rdquo;. Pitate li banjalučane za ulicu Veselina Masle&scaron;e, mogli bi se zamisliti, jer je ona svima znana kao &ldquo;Gospodska ulica&rdquo;. Nekad se na mjestu dana&scaron;nje &ldquo;Gospodske ulice&ldquo; nalazila bara zvana Muslina bara, koja je zimi služila kao klizali&scaron;te za djecu. Poznati banjalučki trgovac Toma Radulović, bio je prvi koji je dobio dozvolu da u gradu otvori trgovinu, izgradio je jednospratncicu 1855. pod nazivom Albanija. Dosadiv&scaron;i da mu u radnju ulaze seljaci i slabo &scaron;ta pazare, on je na zgradu samoinicijativno, istakao rukom napisan naziv &bdquo;Gospodska ulica&ldquo;. To je bilo neposredno pred ulazak Austrougarske vojske u Banjaluku, pa su oni ovaj naziv i prihvatili te se ulica zvanično zvala &bdquo;Herren gasse&ldquo; do 1918. Naziv se primio, prvo na austrijskim razglednicama, na kojima je Gospodska nazvana Herrengasse, a potom i u svakodnevnom govoru. Prije njihovog dolaska zvala Pivarska.</p>
+<p style="text-align: justify;">Krajem XIX vijeka u Gospodskoj ulici (ulica Veselina Masle&scaron;e) podignut je niz jednospratnih neorenesansnih zgrada, a docnije i zgrada sa stilskim elementima secesije, namjenjenih trgovini i stanovanju Većina objekata namjenjenih stanovanju i trgovini, koja je u ovoj ulici izgrađena krajem 19.vijeka sačuvana je i danas, sa dekorativnim kupolama i ukrasima oko prozora i balkona čineći reprezentativnu pje&scaron;ačku zonu u sredi&scaron;tu grada.</p>
+<p style="text-align: justify;">Između dva rata zvala se ulica Kralja Alfonsa XIII iz zahvalnosti prema ovom &scaron;panskom kralju, koji je spasio 16 Srba osuđenih na smrt, u poznatom banjolučkom Veleizdajničkom procesu 1915-1916. godine. A poslije rata pa sve do danas zvanično nosi naziv po banjalučkom revolucionaru i publicisti Veselinu Masle&scaron;i. I pored mnogobrojnih promjena naziva, među Banjalučanima i turistima ona je i danas najpoznatija kao "Gospodska ulica&ldquo;.Danas se u ovim objektima duž Gospodske ulice nalaze mnoge trgovačke radnje koje nude robu domaćih i svjetskih proizvođača.</p>
+</div>]]></string>
+    <string name="gospodska_latitude">44.771574</string>
+    <string name="gospodska_longitude">17.191317</string>
+    <string name="ferhadija_name">Džamija Ferhadija</string>
+    <string name="ferhadija_url">http://banjaluka-tourism.com/images/Posjetite/Ferhadija.jpg</string>
+    <string name="ferhadija_description"><![CDATA[<p style="text-align: justify;"><strong>Legenda o nastanku Ferhadije&nbsp;</strong></p>
+<p style="text-align: justify;">Trojica najboljih neimara gradila su džamiju Ferhadiju u Banjaluci. Po namjeri i želji Ferhad-pa&scaron;e Sokolovića, morala je biti "velika i lijepa, kakve na ovom kraju svijeta nikada nije bilo, niti će biti". Kada je objekt bio sagrađen, neimari ču&scaron;e da ih Ferhad-pa&scaron;a namjerava pogubiti kako graditeljsku ljepotu vi&scaron;e nikada nigdje ne bi sazidali. Čuv&scaron;i za to, napravi&scaron;e sebi krila i poletje&scaron;e s vrha džamije. Sva trojica pado&scaron;e na tri različite strane Banjaluke, Petar na dana&scaron;nji Petrićevac, Pavle na dana&scaron;nji Pavlovac, a treći, koji slomi rebra, pade na desnu obalu Vrbasa, pa ovaj dio grada nazva&scaron;e Rebrovac.</p>
+<p style="text-align: justify;"><strong>Centralna uloga</strong></p>
+<p style="text-align: justify;">Ovo je najpoznatija legenda vezana uz gradnju Ferhad-pa&scaron;ine džamije u Banjaluci, sve ostale pi&scaron;u se i danas... Kompleks Ferhadije imao je centralnu ulogu i značaj u životu grada na Vrbasu od 1579. do 1993. godine. Svi oni koji to prepoznaju, s nestrpljenjem i&scaron;čekuju ponovni susret s istorijom, učvr&scaron;ćenom u čak 414 godina Banjaluke. Najbolji neimari i danas precizno i autentično zidaju Ferhadiju, česmu, turbe Ferhad-pa&scaron;e i njegove supruge, bajraktara i unuke Safikadune, te najznačajniji banjalučki &scaron;adrvan. - Kult vode donesen je s Istoka i ima posebno mjesto u svakodnevnom životu muslimana, pa tako i u prostornim rje&scaron;enjima orijentalnih gradova. &Scaron;adrvan, koji ima funkcionalnu ulogu, uzimanje abdesta prije namaza, predstavlja i simbolično mjesto izvora, koje je jo&scaron; od prvih džamija arapskog svijeta bilo ograđeno i čuvano. U dvori&scaron;tu Ferhadije, &scaron;adrvan je napravljen kada i džamija, a voda dovedena drvenim cijevima, s pečenom glinom, iz sela koje se danas zove Palovac, s izvora koji se i danas zove &Scaron;adrvan - napisala je u "Dokumentima opstanka" prof. dr. Sabira Husedžinović, docentica na Arhitektonskom fakultetu u Sarajevu i stručna savjetnica za kulturno-istorijsko naslijeđe BiH. Prema njenim zapisima, &scaron;adrvan sa 12 česmi - lula, na samom ulazu u kompleks Ferhadije, s ukrasnom mrežicom od kovanog željeza, u 19. vijeku podigao je Hadži Feslija iz marokanskog grada Fesa. Njegov baldahin, naime, bio je oslikan s unutra&scaron;nje strane. Nakon zemljotresa 1969. godine, ponovo je sagrađen, a arheolozi su čak osamdesetih godina otkrili temelje kompletnog karavan-saraja na ovom mjestu. Nakon miniranja Ferhadije 1993. godine, ostaci &scaron;adrvana pronađeni su na lokalnim deponijama, gdje je tada&scaron;nja vlast odvozila istorijsko naslijeđe grada. Ponovo je sagrađen i do potpune funkcionalnosti dijeli ga jo&scaron; samo priključak vode.</p>
+<p style="text-align: justify;"><strong>Prvi sastanci</strong></p>
+<p style="text-align: justify;">Dru&scaron;tvena funkcija Ferhad-pa&scaron;inog &scaron;adrvana jednako je velika kao i vjerska. - Vjernici su nekada sat i vi&scaron;e prije namaza dolazili u kompleks džamije i kako se rjeđe odlazilo u kafane tada, kraj &scaron;adrvana se razgovaralo i dogovaralo. Tu se odvijao jedan zajednički život - priča 72-godi&scaron;nji Banjalučanin Zijahudin Smailagić. Posebno u danima ramazana, kaže on, Banjalučani bi kraj &scaron;adrvana gledali u munaru Ferhadije čekajući vrijeme iftara. - Banjalučki &scaron;adrvan nalazi se na samom ulazu pred Ferhadijom, u desnom uglu je posebna džamijska česma, odakle su besplatno točili vodu svi oni koji su prolazili kroz Banjaluku. Omladina bi na tom mjestu zakazivala prve sastanke. Ali, odlazak na Bajram u Ferhadiju i doživljaj cijelog tog kompleksa, najveća je svečanost koju ja nosim iz svog života - nagla&scaron;ava Smailagić.</p>
+<p style="text-align: justify;"><strong>Ferhad-pa&scaron;u ubio rob</strong></p>
+<p style="text-align: justify;">Svaka du&scaron;a okusiće smrt. Računajući s tom činjenicom da ćemo se svi vratiti svome Gospodaru, iako niko ne zna gdje će umrijeti, to predviđam, ako se svome Gospodaru preselim u Banjaluci, neka podignuv&scaron;i mi turbe, nad mojim grobom, svakodnevno dvojici turbedara isplaćuju po četiri akče, navodi su iz vakufname Ferhad-pa&scaron;e, a pretpostavlja se da je njegovo tijelo preneseno u Banjaluku nakon &scaron;to ga je na drugom kraju Bosne iz pritaje ubio njegov rob. Uz njega je, prema jednoj priči, ukopana supruga, a prema dostupnoj literaturi, sin ili unuk. Pretpostavlja se da je turbe bilo podignuto 1590. godine. Malo je zvaničnih dokumenata koji svjedoče o životu Ferhad-pa&scaron;e. Poznato je da je jedan od najznačajnijih Bo&scaron;njaka koji su se istakli pod osmanskom upravom, vojskovođa i veliki vakif i dobrotvor.</p>
+<p style="text-align: justify;"><strong> Sagrađena od dukata Habsburgovaca</strong></p>
+<p style="text-align: justify;">Prema predanjima, 1575. godine Ferhad-pa&scaron;a se borio s barunom Herbertom Auerspergom. Habsburgovci su pretrpjeli poraz, poginuo je i sam barun s jo&scaron; 200 ljudi, a 2.000 vojnika bilo je zarobljeno. Među zarobljenicima je bio i barunov sin Volf (Wolf), kojeg je kasnije porodica otkupila za 30.000 dukata, od kojih će Ferhad-pa&scaron;a napraviti Ferhadiju.</p>]]></string>
+    <string name="ferhadija_latitude">44.767437</string>
+    <string name="ferhadija_longitude">17.187311</string>
+    <string name="hram_name">Hram Hrista Spasitelja</string>
+    <string name="hram_url">http://banjaluka-tourism.com/images/Posjetite/Hram_Hrista_Spasitelja.jpg</string>
+    <string name="hram_description"><![CDATA[<p style="text- align: justify;"><strong>Izgradnja crkve</strong></p>
+<p style="text-align: justify;">Izgradnja Saoborne crkve "Svete Trojice" u centru grada je bio prvi veći graditeljski poduhvat u Banjaluci nakon Prvog svjetskog rata. Građena je na praznom prostoru ispred tada&scaron;nje kafane &laquo;Balkan&raquo; od 1925. godine. Projektovao ju je Du&scaron;an Živanović, arhitekta iz Beograda.Crkva je izrađena u srpskovizantijskom stilu, koji se kod nas javlja u arhitektonskoj praksi krajem XIX i početkom XX vijeka. Građevinski, crkva je zavr&scaron;ena 1929. godine, a enterijer je rađen poslije raspisanog jugoslovenskog konkursa, na kojem je nagradu dobio Grigorije Samojlov. Ukra&scaron;avanje unutra&scaron;njosti crkve i izrada ikonostasa povjereni su Jovanu Bijeliću, Veljku Stanojeviću, Svetislavu Strali, Jaroslavu Kratini i Petru Suhačevu. Crkvi je kumovao prvi ban Vrbaske banovine Svetislav Tisa Milosavljević 1929. godine. Izgradnja Saborne crkve iniciraće dalju izgradnju okolnog prostora, a posebno u periodu Vrbaske banovine.</p>
+<p style="text-align: justify;"><strong>Bombardovanje crkve</strong></p>
+<p style="text-align: justify;">Crkva je o&scaron;tećena u nacističkom bombardovanju Banjaluke 1941. godine, a ubrzo zatim i sru&scaron;ena po nalogu tada&scaron;nje okupatorske vlasti Nezavisne države Hrvatske. Po zavr&scaron;etku II svjetskog rata na ovom mjestu je izgrađen spomenik palim borcima u Narodno oslobodilačkoj borbi protiv fa&scaron;izma.</p>
+<p style="text-align: justify;"><strong>Obnova crkve</strong></p>
+<p style="text-align: justify;">Sa obnovom crkve, sada pod nazivom, Hrista Spasitelja se počelo 1993. a temelji su iskopani 1992. godine. Spomenik palim borcima u Narodno- oslobodilačkoj borbi je izmje&scaron;ten na plato ispred hotela Bosna. Hram se gradio od 1993 do 2004. godine. Urađen je troslojan zid kao specifičan način gradnje. Crkva je sagrađena od najplemenitijeg kamena sa Bliskog istoka tzv. TRAVERTIN u bojama (crveni i žuti) koji nastaje vulkanskim erupcijama. Na fasadi hrama se nalaze portali, rozete, stubovi, krstovi, bifole arhivolte koje su rađene od kararskog bijelog mermera. Stubovi (6 velikih i 4 mala) su napravljeni od granita iz mjesta Đadone, Sardinija. Pozlaćeni lim kojim su pokrivene kupole ne rđa, a izrađen je po ruskoj tehnologiji. Zvona su izrađena u Insbruku kao &scaron;to su bila zvona i u poru&scaron;enoj crkvi (B dur) 6400T te&scaron;ka, a najveće zvono je te&scaron;ko 3200T. Ugrađena je i najsavremenija elektronika za zvonjenje. Iako jo&scaron; uvjek njena unutra&scaron;njost nije uređena, danas crkva Hrista Spasitelja predstavlja jednu od najljep&scaron;ih i najvećih arhitektonskih ostvarenja pravoslavnih hramova na Balkanu.</p>]]></string>
+    <string name="hram_latitude">44.772208</string>
+    <string name="hram_longitude">17.191700</string>
+    <string name="muzej_name">Muzej Republike Srpske</string>
+    <string name="muzej_url">http://banjaluka-tourism.com/images/Posjetite/Muzej_RS.jpg</string>
+    <string name="muzej_description"><![CDATA[<p style="text-align: justify;">Osnovan 26. septembra 1930. pod nazivom Muzej Vrbaske banovine. Po nalogu Kralja Aleksandra Karađorđevića, osnivač muzeja je bio prvi ban Vrbaske banovine Svetislav Tisa Milosavljević. Prvi upravnik Muzeja Vrbaske banovine bio je Spiridon &Scaron;piro Bocarić, akademski slikar iz Budve. Za prvih deset godina rada (do 1941. godine) skupio je u okolini Banja Luke veliki broj etnografskih predmeta neprocjenjive istorijske, nacionalne i kulturne vrijednosti. Do 1982. godine Muzej RS je nekoliko puta mijenjao naziv i prostor, a potom smje&scaron;ten u dijelu objekta Doma radničke solidarnosti, u kojem su Narodna i univerzitetska biblioteka i dječije pozori&scaron;te. Odlukom Vlade Republike Srpske, 14. novembra 1992. godine, dotada&scaron;nji Muzej Bosanske Krajine preimenovan je u Muzej Republike Srpske i progla&scaron;en centralnom ustanovom za&scaron;tite pokretnih kulturnih dobara. Danas je smje&scaron;ten u objektu Doma radničke solidarnosti i raspolaže sa 3. 700 m<sup>2</sup> vlastitog prostora od čega se na 1.500 m<sup>2</sup> nalazi Stalna izložbena postavka, a ostali dio depoi i službene prostorije.</p>
+<p>U svojim zbirkama Muzej RS čuva vi&scaron;e od 30.000 eksponata. Specijalizovana muzejska biblioteka raspolaže sa vi&scaron;e od 14.000 knjiga. Adaptacijom prostora Muzej RS je dobio prostor za autorske, temtske i gostujuće izložbe.</p>
+<p>&nbsp;Zanimljivo je da u Muzeju RS možete pronaći i zbirku predmeta sa ostrva Fidži u Melaneziji. Ono po čemu je ova zbirka interesantna jeste da sadrži razne domorodačke predmete: buzdovane, &scaron;titove, lukove, vesla, nakit i dr.</p>
+<p><strong>Muzej Republike Srpske</strong><br />Đure Daničića 1<br />Tel: +387(0)51 215 973<br />Email:&nbsp;<a href="mailto:muzejrs@inecco.net">muzejrs@inecco.net</a> <br />Web:&nbsp;<a href="http://www.muzejrs.com">www.muzejrs.com</a></p>]]></string>
+    <string name="muzej_latitude">44.769470</string>
+    <string name="muzej_longitude">17.191426</string>
+    <string name="muzejs_name">Muzej Savremene Umjetnosti Republike Srpske</string>
+    <string name="muzejs_description"><![CDATA[<p style="text-align: justify;"><span style="text-align: justify;">Muzej savremene umjetnosti Republike Srpske osnovan je 13. januara 1971. godine odlukom Skup&scaron;tine Op&scaron;tine Banjaluka kao Umjetnička galerija u Banjaluci.&nbsp; Umjetnička galerija nastala je nakon akcije likovnih umjetnika sa prostora biv&scaron;e Jugoslavije i drugih krajeva svijeta, koji su se solidarisali sa Banjalukom, pogođenom katastrofalnim zemljotresom 26. i 27. oktobra 1969. godine. Zajedničkom akcijom solidarnosti, istaknuti jugoslovenski slikari, istoričari umjetnosti i prijatelji Banjaluke, kao pomoć nastradalom gradu prikupili su približno 800 umjetničkih djela, &scaron;to je poslužilo kao temelj za osnivanje institucije i činilo njen početni fundus.</span></p>
+<p style="text-align: justify;">Novoimenovana Galerija imala je zadatak da sistematski istražuje, prikuplja, proučava, čuva, obrađuje, restauri&scaron;e, konzervira i javno izlaže umjetnička djela iz oblasti likovne umjetnosti, kako domaćih tako i stranih autora. Njen doprinos ogledao se i u unapređivanju likovne kulture i umjetnosti&nbsp; na &scaron;irem prostoru svog djelovanja, kao i &scaron;irenju i razvijanju smisla za likovnu umjetnost kod publike uop&scaron;te.</p>
+<p style="text-align: justify;">Muzej savremene umjetnosti Republike Srpske nalazi se u jednoj od najreprezentativnijih građevina Banjaluke &ndash;&nbsp; staroj austrougarskoj željezničkoj stanici sagrađenoj 1891. godine, koja je 1981. namjenski adaptirana&nbsp; za potrebe muzejske institucije, čime su zadovoljeni&nbsp; muzeolo&scaron;ki standardi. Objekat je 2007. godine progla&scaron;en nacionalnim spomenikom od strane Komisije za očuvanje&nbsp; nacionalnih spomenika BiH, te zahtijeva specifične mjere za&scaron;tite.</p>
+<p><em><span style="color: #0000ff;">&nbsp;<br /><br /></span></em></p>
+<p><strong>Muzej savremene umjestnosti RS</strong><br />Trg Srpskih junaka 2<br />Tel: +387(0)51 215 364<br />Email:&nbsp;<a href="mailto:galrs@inecco.net">galrs@inecco.net</a><br />Web: <a href="http://www.msurs.net/index.php/sr/">www.msurs.net</a></p>]]></string>
+    <string name="muzejs_url">http://banjaluka-tourism.com/images/Posjetite/Muzej_savremene_umjetnosti_RS.JPG</string>
+    <string name="muzejs_latitude">44.772278</string>
+    <string name="muzejs_longitude">17.189691</string>
+    <string name="krupa_name">Krupa Na Vrbasu</string>
+    <string name="krupa_url">http://banjaluka-tourism.com/images/Posjetite/Krupa_na_Vrbasu.jpg</string>
+    <string name="krupa_description"><![CDATA[<div class="itemFullText">Krupa na Vrbasu se nalazi na magistralnom putu M-16, oko 25km južno od Banjaluke. Smje&scaron;tena je na mjestu gdje Vrbas napu&scaron;ta kanjon i ulazi u Krupsko polje, a sa njegove lijeve strane se ulijeva rijeka Krupa. Mjesto sa izuzetnim prirodnim i kulturnim vrijednostima kao &scaron;to su slapovi, mlinovi i izvori Krupe, Strikina pećina, manastir Sv. Ilija (1289), crkva brvnara (XVI vijek) i srednjovjekovni grad Greben (1192), pogoduje razvoju izletničkog, vjerskog, sportsko-rekreativnog, naučnog, seoskog i ribolovnog turizma. Na u&scaron;ću riječice Krupa u Vrbas nalazi se auto kamp, a u blizini je jedan od najbolje opremljenih fudbalskih stadiona na teritoriji grada Banja Luke sa vje&scaron;tačkom travom. U Krupi na Vrbasu su uređene lake i srednje te&scaron;ke pje&scaron;ačke staze koje povezuju znamenite turističke motive u okruženju.</div>]]></string>
+    <string name="krupa_latitude">44.616915</string>
+    <string name="krupa_longitude">17.137524</string>
+    <string name="hotel_bosna_name">Hotel Bosna</string>
+    <string name="hotel_bosna_url">http://banjaluka-tourism.com/images/stories/posl_dir/hoteli/bosna1.jpg</string>
+    <string name="hotel_bosna_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<p style="text-align: justify;">Kralja Petra I Karađorđevića 97<br />Tel: +387(0)51 215 775<br />Email:<a href="mailto:info@hotelbosna.com"> info@hotelbosna.com</a><a href="mailto:info@hotelbosna.com"><br /></a>Web:<a href="http://www.hotelbosna.com"> www.hotelbosna.com<br /></a><span style="text-align: justify;"><br />Hotel Bosna je jedan od najstarijih hotela u Bosni i Hercegovini. Počeo je sa radom 1885 godine uz tada&scaron;nju željezničku prugu koja je vodila do željezničke stanice u centru grada. Hotel Bosna je i danas jedan od najprestižnijih hotela u Banjaluci. U sklopu hotela se nalaze Piano- bar, restoran, kafići sa ba&scaron;tom, disko klub, kazino, butici i drugi sadržaji.</span></p>
+</div>
+</div>]]></string>
+    <string name="hotel_bosna_rating">4</string>
+    <string name="hotel_bosna_latitude">44.773056</string>
+    <string name="hotel_bosna_longitude">17.190881</string>
+    <string name="hotel_fortuna_name">Hotel Fortuna</string>
+    <string name="hotel_fortuna_url">http://banjaluka-tourism.com/images/Hoteli/fortuna_bl.jpg</string>
+    <string name="hotel_fortuna_rating">4</string>
+    <string name="hotel_fortuna_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div class="itemIntroText">
+<p>Rakovačkih rudara 12<br />Tel: +387(0)51 358 640<br />Email:<a href="mailto:info@wellnessfortuna.com"> info@wellnessfortuna.com<br /></a>Web:<a href="http://www.wellnessfortuna.com"> www.wellnessfortuna.com<br /></a><br />Hotel Fortuna se nalazi u sklopu Wellness centra Fortuna, udaljen samo 2 km od centra Banjaluke. Na raspolaganju je 14 dvokrevetnih i 3 luxuzne sobe. . Nudi <span style="text-align: justify;">usluge WELLNESS CENTRA - tri otvorena bazena, zatvoreni bazen, sauna i fitness, solarium,masaže,frizerski i kozmetički salon.</span></p>
+</div>
+<p style="text-align: justify;"><span style="text-align: justify;">&nbsp;</span></p>
+</div>
+</div>]]></string>
+    <string name="hotel_fortuna_latitude">44.794957</string>
+    <string name="hotel_fortuna_longitude">17.194383</string>
+    <string name="hotel_vrbas_name">Hotel Vila Vrbas</string>
+    <string name="hotel_vrbas_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div class="itemIntroText">
+<div class="itemIntroText">
+<p>Brace Potkonjaka 1<br />Tel: +387(0)51&nbsp;433 840<br />Email: <a href="mailto:vilavrbas@inecco.net">vilavrbas@inecco.net<br /></a>Web:&nbsp;<a href="http://www.hotelvilavrbas.com">www.hotelvilavrbas.com<br /></a><br /><span style="text-align: justify;">Hotel Vila Vrbas je smje&scaron;ten na obali Vrbasa kraj Gradskog mosta. Udaljen je nekoliko stotina metara od užeg sredi&scaron;ta grada. Na suprotnoj obali Vrbasa smje&scaron;tena je tvrđava Kastel, jedno od obilježja grada Banja Luke.</span></p>
+</div>
+<div class="itemFullText">&nbsp;</div>
+<p><span style="text-align: justify;">&nbsp;</span></p>
+</div>
+<p style="text-align: justify;"><span style="text-align: justify;">&nbsp;</span></p>
+</div>
+</div>]]></string>
+    <string name="hotel_vrbas_url">http://banjaluka-tourism.com/images/Hoteli/Hotel_vila_Vrbas.jpg</string>
+    <string name="hotel_vrbas_latitude">44.765007</string>
+    <string name="hotel_vrbas_longitude">17.189942</string>
+    <string name="hotel_vrbas_rating">3</string>
+    <string name="hotel_talija_name">Hotel Talija</string>
+    <string name="hotel_talija_url">http://banjaluka-tourism.com/images/Hoteli/Hotel_Talija.jpg</string>
+    <string name="hotel_talija_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div id="main-content" class="col-md-12">
+<div id="content">
+<div id="k2Container" class="itemBlog itemView hoteli cat">
+<div class="itemIntroText">
+<p>Srpska 9<br />Tel: +387(0)51&nbsp;327 460<br />Email: <a href="mailto:info@hoteltalija.com">info@hoteltalija.com</a><br />Web:&nbsp;<a>www.hoteltalija.com</a><br /><br /></p>
+</div>
+<div class="itemFullText">
+<p style="text-align: justify;"><br />Hotel "Talija" se nalazi u samom centru grada Banjaluke.&nbsp; Hotel raspolaže sa 19 moderno opremljenih soba i 4 apartmana. U ugodnom ambijentu kafe-slastičarne "Talija" možete se opustiti uz raznovrstan izbor alkoholnih i bezalkoholnih pića i kolača. Ako ste na poslovnom putovanju i planirate sastanak sa Va&scaron;im klijentima, uz prezentaciju Va&scaron;ih proizvoda ili usluga, ili planirate održavanje seminara, na raspolaganju Vam stoji moderno opremljena konferencijska sala sa 25 mjesta. Ugodnom ambijentu doprinosi prelijep pogled na centar Banjaluke.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></string>
+    <string name="hotel_talija_rating">5</string>
+    <string name="hotel_talija_latitude">44.771165</string>
+    <string name="hotel_talija_longitude">17.193557</string>
+    <string name="zgrada_uprave_name">Zgrada gradske uprave Banja Luka</string>
+    <string name="zgrada_uprave_url">https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Uprava.jpg/375px-Uprava.jpg</string>
+    <string name="zgrada_uprave_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div id="main-content" class="col-md-12">
+<div id="content">
+<div id="k2Container" class="itemBlog itemView hoteli cat">
+<p>Zgrada Gradske uprave (nekada palata Banske uprave ili Banova zgrada uprave) objekat je u Banjoj Luci u kojem su smje&scaron;tene institucije Skup&scaron;tine grada, gradonačelnika i administrativne službe grada Banje Luke.</p>
+<p><strong>Istorija</strong></p>
+<p>Početkom 1931. godine raspisan je jugoslovenski konkurs u beogradskoj Politici i sarajevskom Narodnom jedinstvu, za izradu idejnih skica za palatu Banske uprave i Banski dvor, a prvu nagradu su dobili arhitekti iz Beograda Jovanka Bončić Katerinić, Anđelija Pavlović i Jovan Ž. Ranković. Paralelno sa izgradnjom Banskog dvora, u martu 1931. godine počela je i gradnja palate Banske uprave. U Banskoj upravi je planirano 150 soba sa svim administrativno-upravnim aparatom Banovine. Objekti su svečano otvoreni 8. novembra 1932.</p>
+<p><strong>Arhitektura</strong></p>
+<p>Dispozicije objekata palate Banske uprave i Banskog dvora su rije&scaron;ene blokovskim sistemom, sa svjetlarnicima uz nagla&scaron;eno centralno postavljeno stepeni&scaron;te, smi&scaron;ljeno i kreativno, sa zadovoljenjem svih funkcija. Gabariti obuhvataju uglove ulica, kod kojih se, izlazeći fasadama na tri strane, formiraju zatvoreni blokovi. Na ovaj način zdanja Banskog dvora i Banske uprave predstavljaju čvrste zavr&scaron;ne elemente postojećih cjelina, istovremeno djelujući kao fasadno platno reprezentativnog trga. Ovakvo arhitektonsko rje&scaron;enje, koje u sebi sadrži arhitektonski izraz objedinjenog klasicizma i elemenata srednjovjekovnog srpskog graditeljstva, sa izvučenim i nagla&scaron;enim pilastrima, te sa dekorativno obrađenim kapitelima i arhivoltama koje uokviruju polukružne otvore, u konačnom rje&scaron;enju je dalo graditeljsko ostvarenje posebnih vrijednosti.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></string>
+    <string name="zgrada_uprave_latitude">44.771921</string>
+    <string name="zgrada_uprave_longitude">17.191409</string>
+    <string name="palata_republike_name">Palata Republike</string>
+    <string name="palata_republike_url">http://banjalukatravel.com/wp-content/uploads/2017/07/Palata-2.jpg</string>
+    <string name="palata_republike_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div id="main-content" class="col-md-12">
+<div id="content">
+<div id="k2Container" class="itemBlog itemView hoteli cat">
+<p>Pored kulturnog centra grada banja luka, banskog dvora, nalazi se i palata republike, prvobitno hipotekarna banka. Ova građevina je jedna od građevina koje su izgrađene za vrijeme uprave bana tise milosavljevića. Zgradu krase dva bronzana kipa kraji&scaron;kih seljaka koji su naknadno dodani, a izradio ih je vladimir pavlovič zagorodnjuk.</p>
+<p>Prelijepa zgrada tada&scaron;nje hipotekarne banke zavr&scaron;ena je 1936. Godine po projektu beogradskog arhitekte miodraga vasića. Poslije ii svjetskog rata, ova zgrada je bila narodna banka. Od &scaron;ezdesetih godina nosila je ime služba dru&scaron;tvenog knjigovodstva, popularno sdk kako je mnogi banjalučani i danas zovu. Zgrada je bila i ostala popularno mjesto gdje su se mje&scaron;tani nalazili prilikom izlaska u grad.</p>
+<p>Od 2008. Godine zgrada dobija ime palata republike i postaje zgrada gdje predsjednik provodi svoj radni dan.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></string>
+    <string name="palata_republike_latitude">44.772425</string>
+    <string name="palata_republike_longitude">17.192975</string>
+    <string name="narodno_pozoriste_name">Narodno pozorište Republike Srpske</string>
+    <string name="narodno_pozoriste_url">https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/NarodnoPozoristeRS.jpg/330px-NarodnoPozoristeRS.jpg</string>
+    <string name="narodno_pozoriste_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div id="main-content" class="col-md-12">
+<div id="content">
+<div id="k2Container" class="itemBlog itemView hoteli cat">
+<p>Narodno pozori&scaron;te Republike Srpske u Banjoj Luci osnovano je 2. septembra 1930. godine kao &bdquo;Narodno pozori&scaron;te Vrbaske banovine&ldquo; i od tada je važan nosilac razvoja dramske umjetnosti. U periodu nakon Drugog svjetskog rata nosilo je naziv &bdquo;Narodno pozori&scaron;te Bosanske Krajine&ldquo;. Objekat se nalazi na listi nacionalnih spomenika Bosne i Hercegovine.</p>
+<p><strong>Istorijat</strong></p>
+<p>&nbsp;</p>
+<p>Najveće zasluge za nastanak ovog pozori&scaron;ta pripadaju prvom banu Vrbaske banovine, Svetislavu Milosavljeviću, ličnosti koja je svojom vizijom i energijom postavila temelje modernoj Banjoj Luci. Svečana premijera u pozori&scaron;tu, uz govore samog bana i visokih zvanica, održana je 18. oktobra 1930. godine, a na repertoaru su bili Nu&scaron;ićev &laquo;Hadži Loja&raquo;, Odavićevi &laquo;Hej, Sloveni&raquo; i &Scaron;vabićev &laquo;Povratak&raquo;.</p>
+<p>&nbsp;</p>
+<p>U pozori&scaron;nim projektima koje je izvodilo Narodno pozori&scaron;te Republike Srpske, gostovali su kao saradnici mnogi reditelji iz Beograda, Novog Sada, Ni&scaron;a, domaći i strani umjetnici, glumci, pjevači, scenografi, kostimografi, kompozitori. Posebno je važna saradnja sa domaćim dramskim piscima čija su djela izvođena na repertoaru Pozori&scaron;ta. Podjelom Jugoslavije i podjelom SR BiH na dva entiteta, u Republici Srpskoj su ostala samo dva profesionalna pozori&scaron;ta, Dječije pozori&scaron;te Republike Srpske i Narodno pozori&scaron;te Republike Srpske u Banjoj Luci. U jo&scaron; nekim gradovima Republike Srpske postoje amaterska pozori&scaron;ta i pozori&scaron;ni festivali, koje banjolučko Narodno pozori&scaron;te nesebično pomaže, a planiraju se i osnivanja novih profesionalnih pozori&scaron;ta. Jedno od novih pozori&scaron;ta koje je nastalo uz pomoć Narodnog pozori&scaron;ta Republike Srpske je Gradsko pozori&scaron;te Jazavac. Narodno pozori&scaron;te se pored svojih redovnih poslova, dodatno angažovalo na osnivanju Akademije umjetnosti, tj. &scaron;kolovanju glumačkog kadra, a u posljednje vrijeme nastoji i da pomogne i ohrabri televizijske kuće u Republici Srpskoj da počnu proizvoditi igrani program.</p>
+<p><strong>Sada&scaron;njost</strong></p>
+<p>&nbsp;</p>
+<p>Danas Narodno pozori&scaron;te Republike Srpske ima osamdeset stalno zaposlenih, a u sastavu samog glumačkog ansambla, dvadeset&scaron;est dramskih umjetnika. Predstave se izvode gotovo svakodnevno, a karte su redovno rasprodate. Jedan od najvećih, a sigurno i najposjećenijih kulturnih događaja u gradu je i Teatar Fest koji se svake godine održava u Narodnom pozori&scaron;tu Republike Srpske, uz uče&scaron;će mnogih domaćih i stranih glumačkih ansambala.</p>
+<p><strong>Gradnja</strong></p>
+<p>&nbsp;</p>
+<p>Na zemlji&scaron;tu ustupljenom od gradske op&scaron;tine, u periodu od avgusta 1933. do septembra 1934. godine, prema projektu inž. Josifa Goldnera, izgrađena je zgrada pod nazivom &bdquo;Dom kralja Petra I Velikog Oslobodioca&ldquo; u kojoj su bili smje&scaron;teni pozori&scaron;te, muzej, dru&scaron;tvo &laquo;Zmijanje&raquo;, KAB, a od 1935. godine i Narodna biblioteka Kralja Petra I Velikog Oslobodioca. Zgrada pozori&scaron;ta iz 1934. godine je reprezentativno javno zdanje, stilski određeno elementima Bauhausa, ali uz zadržavanje nekih odlika neoklasicizma. Zgradom pozori&scaron;ta ban Milosavljević zaokružio je cjelinu osmi&scaron;ljenog gradskog jezgra.</p>
+<p><strong>Istraživački i konzervatorsko&ndash;restauratorski radovi</strong></p>
+<p>U toku svog postojanja objekat je u nekoliko navrata adaptiran u skladu sa promjenom namjene pozori&scaron;ne zgrade. Prema podacima koji su čitljivi sa projekta Narodnog pozori&scaron;ta, koji se čuva u Arhivu RS, vidljivo da je objekat su&scaron;tinski sačuvao prvobitni koncept. U toku svog postojanja na objektu su izvr&scaron;ene sljedeće značajnije intervencije:</p>
+<p>&nbsp; -&nbsp; generalno uređenje sale prema nacrtima arhitekte Vladimira Dobrovića, kao i tehnička modernizacija scene 1959. godine;</p>
+<p>&nbsp;&nbsp; - rekonstrukcija zgrade nakon zemljotresa 1969. godine, prema projektu zagrebačkog arhitekte i vajara Vjenceslava Rihtera;</p>
+<p>&nbsp;&nbsp;&nbsp; -sanacija objekta 2004/05. godine.</p>
+<p><strong>Stepen za&scaron;tite</strong></p>
+<p>Od 1986. godine objekat je pod za&scaron;titom kao kulturno dobro. Komisija za očuvanje nacionalnih spomenika je 2012. godine istorijski spomenik-Narodno pozori&scaron;te Republike Srpske proglasila nacionalnim spomenikom Bosne i Hercegovine.[1]</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></string>
+    <string name="narodno_pozoriste_latitude">44.774115</string>
+    <string name="narodno_pozoriste_longitude">17.193431</string>
+    <string name="gibonni_name">Gibonni 8. juna na tvrđavi Kastel u Banjaluci</string>
+    <string name="gibonni_url">https://www.bl-portal.com/media/k2/items/cache/1f53a78b4e9d301da8ee2d997d710a8f_L.jpg</string>
+    <string name="gibonni_description"><![CDATA[<div class="itemFullText">
+<div class="itemIntroText">
+<div id="main-content" class="col-md-12">
+<div id="content">
+<div id="k2Container" class="itemBlog itemView hoteli cat">
+<div class="itemIntroText">
+<p><strong>Jedna od zasigurno najvećih regionalnih zvijezda Zlatan Stipi&scaron;ić Gibonni 08. juna na banjalučkoj tvrđavi Kastel održaće koncert za pamćenje.</strong></p>
+</div>
+<div class="itemFullText">
+<p>Poslednji put Banjalučani su u koncertu ovog briljatnog autora, pjesnika i pjevača uživali prije 4 godine. Organizator koncerta OK team u partnerstvu sa Coca Colom po prvi put spektakl Gibonnija donosi na jedan od najljep&scaron;ih koncertnih prostora u Banjaluci &ndash; tvrđavu Kastel.</p>
+<p>Svi fanovi i ljubitelji ove velike zvijezde koji njegovu samostalnu karijeru koja traje od 1991. godine, prate kroz njegove najveće hitove: &bdquo;Posoljeni zrak i razlivena tinta&ldquo;; &bdquo;Tempera&ldquo;; &bdquo;Libar&ldquo;; &bdquo;Žeđam&ldquo;; &bdquo;Ovo mi je &scaron;kola&ldquo;; &bdquo;Svi moji punti kad se zbroje&ldquo;; &bdquo;Mirakul&ldquo; i brojni drugi, zasigurno sa nestrpljenjem nakon dugo vremena isčekuju ovaj koncert. Za očekivanje je da će se i ovog puta za spektal 08. juna na tvrđavi Kastel tražiti karta vi&scaron;e.</p>
+<p>Ovaj autor koji je na muzičkoj sceni prisutan već vi&scaron;e od 30 godina najpoznatiji je kao samostalni autor i pjevač čiji su veliki hitovi pokorili region. Kombinacija rocka i popa u njegovim pjesmama koju prati mediteranska nota, te fenomenalni tekstovi u kojima na hiljade obožavalaca pronalazi sebe, na&scaron;li su put do srca mnogih i učinili Gibonnija istinskom zvijezdom.</p>
+<p>Gibonni je i prvi hrvatski UNICEF-ov ambasador dobre volje, jo&scaron; od 2003. godine koji aktivno učestvuje u podsticanju dječijih prava, a posebno za&scaron;tite djece od nasilja i diskriminacije, kao i u projektima prikupljanja donacija za UNICEF-ove projekte.</p>
+<p>Ulaznice za koncert u Banjaluci su u prodaji od srijede 18. aprila putem prodajnog sistema kupikartu.ba. U samom startu prodaje biće pu&scaron;ten ograničen broj ulaznica po cijeni od 15,00 KM, kao i 30,00 KM za one koji žele da u koncertu uživaju iz VIP zone.</p>
+<p>Ulaznice će u prodaji biti dostupne i na Trgu Krajine, a tačan početak prodaje na ovoj lokaciji biće objavljen u narednom periodu.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></string>
+    <string name="gibonni_latitude">44.766794</string>
+    <string name="gibonni_longitude">17.189832</string>
+    <string name="jelena_tomasevic_name">Koncert Jelene Tomasevic Kastel 28.06.2018</string>
+    <string name="jelena_tomasevic_url">http://startravel.ba/wp-content/uploads/2018/05/jelena_tomasevic-web.jpg</string>
+    <string name="jelena_tomasevic_description"><![CDATA[<p>Spektakularan koncert <strong>Jelene Toma&scaron;ević u Banjaluci</strong> uz pratnju vrhunskog novosadskog<strong> Big bend-a</strong>. Jedan od najpopularnijih ženskih vokala u regionu na tvrđavi <strong>Kastel 28.06.2018. u 20h</strong></p>
+<p>Karte možete kupiti u Turističkoj agenciji &bdquo;<strong>STAR TRAVEL</strong>&ldquo; i na platou ispred robne kuće &bdquo;<strong>BOSKA</strong>&ldquo; .</p>
+<p><br /> Va&scaron; &bdquo;STAR TRAVEL&ldquo;</p>
+<p><br /> <strong>Prijatelji koncerta:</strong></p>
+<p>M:tel</p>
+<p>Tropic</p>
+<p>UniCredit Bank Banja Luka</p>
+<p>Vivia</p>
+<p>Atos OSIGURANJE</p>
+<p>GrafoMark Lakta&scaron;i</p>
+<p>Alfa Plam CALUX</p>
+<p>KONTAKT RADIO-TELEVIZIJA-PORTAL</p>
+<p>Casa Bianca</p>]]></string>
+    <string name="jelena_tomasevic_latitude">44.766634</string>
+    <string name="jelena_tomasevic_longitude">17.191495</string>
+    <string name="demofest_name">Demofest » Banja Luka » tvrđava Kastel » od 20. do 22. jula</string>
+    <string name="demofest_url">https://cms.filiptravel.rs/b2cImages/demofest/demofest-banja-luka-lineup.png</string>
+    <string name="demofest_description"><![CDATA[<p style="margin-left: 0px; margin-right: 0px;"><span style="font-size: 14px;"><strong>Demofest </strong>je jedinstveni regionalni muzički festival takmičarskog karaktera, nastao 2008. godine u <strong>Banjaluci</strong>, a pruža &scaron;ansu neafirmisanim, demo muzičarima sa ex-Yu prostora da živim nastupom pokažu da su dostojni ponovog pojavljivanja na sceni, te da, kao jedan od ciljeva, tu i ostanu.</span></p>
+<p style="margin-left: 0px; margin-right: 0px;"><span style="font-size: 14px;">Jo&scaron; i pre premijernog izdanja, tokom početnih priprema, najvi&scaron;i standard je bio jedina opcija, kako bi se načinio onaj prvi, za mnoge često i nesiguran korak, te dokazalo da <strong>Banja Luka</strong> ima ozbiljan projekat na koji može računati ceo&nbsp;region. Taj prvi korak, očekivanom inercijom, udruženom sa neumoljivom predano&scaron;ću, čeličnom voljom i neiscrpnim izvorima inspiracije, pretvorio se u siguran i stabilan hod &ndash; od vizije prema ideji, od ideje ka realizaciji.</span></p>
+<p style="margin-left: 0px; margin-right: 0px;"><strong>Demofest </strong>je postao jedan od najuspje&scaron;nijih festivala u ovom delu Evrope i uvr&scaron;ten je na UNESCO listu projekata od posebnog značaja za povezivanje i razvoj kultura u zemljama Evrope. Takođe, <strong>Demofest</strong> je 2016. godine nominovan za prestižnu nagradu <em>UK Festival Awards</em>, i to u kategoriji <em>&ldquo;Best Overseas Festival&rdquo;</em>, odnosno najbolji festival van Velike Britanije.</p>
+<p style="margin-left: 0px; margin-right: 0px;">Ovogodi&scaron;nji izdanje <strong>Demofesta </strong>će se održavati od 20. do 22. jula na <strong>tvrđavi Kastel u Banjaluci</strong>, a u revijalnom programu će nastupiti Rudimental DJ, Marky Ramone, Ky-Mani Marley, Freemasons, Funkerman, Dubioza kolektiv, Edo Maajka, Bad Copy, Lačni Franz, Sopot, Shanghai Street Fight, Važno obavje&scaron;tenje, Seine, Letarg i Degeneza.</p>
+<p style="margin-left: 0px; margin-right: 0px;"><strong>Najveći regionalni festival demo bendova</strong>&nbsp;živi 24 časa tokom sva tri festivalska dana i otvara prostor za kreativce iz različitih umetničkih oblasti.&nbsp;<u>U dnevnom programu festivala svoje mesto pronalaze</u>: fotografi, slikari, pisci, crtači stripova i grafita, filmski stvaraoci i mnogi drugi umetnici. Naravno, i ovde je muzika centralna tema, a&nbsp;<u>organizuju se i brojne radionice</u>, predavanja i muzičke promocije. Sadržaji dnevnog programa&nbsp;<strong>desetog Demofesta</strong>&nbsp;biće objavljeni uskoro.</p>]]></string>
+    <string name="demofest_latitude">44.767175</string>
+    <string name="demofest_longitude">17.191860</string>
+    <string name="imperativ_name">Festival književnosti „Imperativ“ od 30.5 do 3.6.</string>
+    <string name="imperativ_url">https://i2.wp.com/www.banjaluka.com/wp-content/uploads/2018/05/thumbnail-3.jpg?resize=440%2C315&amp;ssl=1</string>
+    <string name="imperativ_description"><![CDATA[<p style="text-align: justify;">Jedinstveni regionalni festival književnosti &bdquo;Imperativ&ldquo; će se održati u periodu od 30.5. do 3.6. 2018 god. u&nbsp;različitim prostorijama Banskog dvora, kao jedini festival ovakve vrste u Republici Srpskoj i u okruženju.<span id="more-448726"></span></p>
+<p style="text-align: justify;">Tokom pet festivalskih dana, publika će imati priliku da prisustvuje značajnim književnim događajima, promocijama knjiga najznačajnihih pisaca iz regiona, promocijama izdavačkih kuća koje će predstaviti svoj rad i ponuditi publici svoja nova izdanja po pristupačnim sajamskim <a id="xClaimOglasId-55595-1" class="xClaimClass" target="_blank"></a>cijenama.</p>
+<p style="text-align: justify;">U okviru sajamskog dijela festivala predstaviće se 14 izdavačkih kuća iz Srbije, Hrvatske, Republike Srpske i BiH, među <a id="xClaimOglasId-57431-2" class="xClaimClass" target="_blank"></a>kojima su Booka, Lom, GeoPoetika, Arete, Bajbuk, Sandorf, V.B.Z., Imprimatur, 9.dimenzija, Fraktura, Pčelica, Ramajana.</p>
+<p style="text-align: justify;">Uz uče&scaron;će domaćih, istaknutih pisaca Tanje Stupar Trifunović, Ranka Risojevića, Berislava Blagojevića, Bore Kapetanovića i Danijela Gatarića. Sa čitaocima&nbsp;će se družiti 17 cijenjenih autora iz regiona <a id="xClaimOglasId-57426-3" class="xClaimClass" target="_blank"></a>koji će promovisati svoja djela. Čitaoci koji se žele družiti s autorima tu priliku će imaće na Festivalu.</p>
+<p style="text-align: justify;">Iz Srbije stižu Marko Vignjević i Ivan Tokin, a iz BiH Dennis Gratz i Ahmed Burić. Gosti iz Crne Gore su Stefan Bo&scaron;ković i Ognjen Spahić, iz Hrvatske Ante Tomić i Damir Pilić.</p>
+<p style="text-align: justify;">U poetskom kutku &bdquo;Poeziju će svi čitati&ldquo; svake večeri jedan pjesnik iz regiona čitaće svoje stihove, a domaćin će mu biti pjesnik iz Banjaluke. Publika će uživati u stihovima&nbsp;Dra&scaron;ka Sikimića, Ane Marije Grbić, Marka&nbsp;Toma&scaron;a, Ivane Simić Bodrožić i Sa&scaron;e Ga&scaron;ića.</p>
+<p style="text-align: justify;">Novi program koji nije zastupljen ni na jednom festivalu književnosti &bdquo;Note i slova&ldquo; okupiće najpraćenije blogere koji će čitati svoje odabrane tekstove i &bdquo;pu&scaron;tati&ldquo; muziku koja prati tekst, među njima su&nbsp;Grof Đuraz,Vladimir Skočajić Skoča&nbsp;I drugi.</p>
+<p style="text-align: justify;">U okviru dijela programa &bdquo;Književni salon za djecu&ldquo; biće predstavljeni izdavači djela za najmlađe, organizovan niz radionica, pisci će čitati svoja djela, diskutovaće se o lektirama i značaju čitanja u najranijem uzrastu.</p>
+<p style="text-align: justify;">Program &ldquo;Bajkovnica&rdquo; osmi&scaron;ljen je kao radionica kreativnog pisanja sa književnicom Tanjom Stupar Trifunovic za <a id="xClaimOglasId-57415-4" class="xClaimClass" target="_blank"></a>sve zainteresovane od 9 &ndash; 14 godina, dok će kreativnu radionicu ilustracije voditi akademski slikar Ognjen Radumilo i Jana Vuković. Za program &ldquo;Lektira u podne&rdquo; zaduženi su Ranko Risojević, Ranko&nbsp;Pavlović, Predrag Bjelo&scaron;ević i Ismet Bekrić.</p>
+<p style="text-align: justify;">Važan dio u programu manifestacije je i panel &ndash; diskusija na temu &bdquo;Položaj pisaca u regionu&ldquo; o kojoj će govoriti autori iz Republike Srpske, BiH, Srbije Hrvatske i Crne Gore.</p>
+<p style="text-align: justify;">&bdquo;Strip salon&ldquo; ponudiće ljubiteljima <a id="xClaimOglasId-57434-5" class="xClaimClass" target="_blank"></a>ove vrste umjetnosti najnovija strip-izdanja, kao i izložbe stripa.</p>]]></string>
+    <string name="imperativ_latitude">44.772790</string>
+    <string name="imperativ_longitude">17.192331</string>
+    <string name="bioskop_name">Repertoar bioskopa Cineplexx Palas od 24. maja</string>
+    <string name="bioskop_url">https://i1.wp.com/www.banjaluka.com/wp-content/uploads/2018/05/Bad-Samaritan.jpg?zoom=2&amp;resize=440%2C315</string>
+    <string name="bioskop_description"><![CDATA[<h2 style="text-align: justify;">Klub zadovoljnih žena &ndash; Novo na repertoaru<span id="more-448792"></span></h2>
+<p style="text-align: justify;">Režiser: Bill Holderman</p>
+<p style="text-align: justify;">Glumci: &nbsp;Diane Keaton, Jane Fonda, Candice Bergen, Mary Steenburgen</p>
+<p style="text-align: justify;">Žanr: komedija, romansa</p>
+<p style="text-align: justify;">Trajanje: 103 min.</p>
+<p style="text-align: justify;">Termini: 17:30, 19:30, 21:30</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Lo&scaron; Samaritanac &ndash; Novo na repertoaru</h2>
+<p style="text-align: justify;">Režiser: Dean Devlin</p>
+<p style="text-align: justify;">Glumci: David Tennant, Kerry Condon, Robert Sheehan</p>
+<p style="text-align: justify;">Žanr: triler, horor</p>
+<p style="text-align: justify;">Trajanje: 110 min.</p>
+<p style="text-align: justify;">Termini: 17:00, 19:45, 22:00</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Fantastična žena &ndash; Novo na repertoaru</h2>
+<p style="text-align: justify;">Režiser: Sebasti&aacute;n Lelio</p>
+<p style="text-align: justify;">Glumci: &nbsp;Daniela Vega, Francisco Reyes, Luis Gnecco, Aline K&uuml;ppenheim</p>
+<p style="text-align: justify;">Žanr: drama</p>
+<p style="text-align: justify;">Trajanje: 104 min.</p>
+<p style="text-align: justify;">Termini: 19:15</p>
+<p style="text-align: justify;">Napomena: Ovogodi&scaron;nji dobitnik prestižne nagrade Oskar za najbolji strani film.</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Deadpool 2</h2>
+<p style="text-align: justify;">Režiser: David Leitch</p>
+<p style="text-align: justify;">Glumci: &nbsp;Ryan Reynolds, Josh Brolin, Morena Baccarin</p>
+<p style="text-align: justify;">Žanr: akcija, komedija</p>
+<p style="text-align: justify;">Trajanje: 119 min.</p>
+<p style="text-align: justify;">Termini: 17:30, 20:00, 22:30 + sub/ned 12:00, 14:30</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Misija Katmandu:Avanture Neli i Sajmona 3D sinh</h2>
+<p style="text-align: justify;">Režiser: Pierre Greco, Nancy Florence Savard</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: animirana avantura</p>
+<p style="text-align: justify;">Trajanje: 85 min.</p>
+<p style="text-align: justify;">Termini: 16:15, 18:00 + sub/ned 12:30, 14:30</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Moj lažni muž</h2>
+<p style="text-align: justify;">Režiser: Bob Fisher, Rob Greenberg</p>
+<p style="text-align: justify;">Glumci: Anna Faris, Eva Longoria, Eugenio Derbez</p>
+<p style="text-align: justify;">Žanr: komedija</p>
+<p style="text-align: justify;">Trajanje: 112 min.</p>
+<p style="text-align: justify;">Termini: 20:15, 22:30</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Crucifixion</h2>
+<p style="text-align: justify;">Režiser: Xavier Gens</p>
+<p style="text-align: justify;">Glumci: Sophie Cookson, Corneliu Ulici, Ada Lupu</p>
+<p style="text-align: justify;">Žanr: horor</p>
+<p style="text-align: justify;">Trajanje: 90 min.</p>
+<p style="text-align: justify;">Termini: 22:00</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Luka i čarobni muzej sinh</h2>
+<p style="text-align: justify;">Režiser: Martin Kot&iacute;k, Inna Evlannikova</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: animirana avantura</p>
+<p style="text-align: justify;">Trajanje: 86 min.</p>
+<p style="text-align: justify;">Termini: 16:30, 18:15 + sub/ned 14:45</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Djevojka u magli</h2>
+<p style="text-align: justify;">Režiser: Donato Carrisi</p>
+<p style="text-align: justify;">Glumci: Toni Servillo, Alessio Boni, Lorenzo Richelmy</p>
+<p style="text-align: justify;">Žanr: triler</p>
+<p style="text-align: justify;">Trajanje: 128 min.</p>
+<p style="text-align: justify;">Termini: 21:15</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Avengers: Infinity War 3D</h2>
+<p style="text-align: justify;">Režiser: Anthony Russo, Joe Russo</p>
+<p style="text-align: justify;">Glumci:Chris Hemsworth,Chris Evans,Benedict Cumberbatch,Robert Downey Jr.</p>
+<p style="text-align: justify;">Žanr: akcija, avantura</p>
+<p style="text-align: justify;">Trajanje: 150 min.</p>
+<p style="text-align: justify;">Termini: 16:00, 19:00 + sub/ned 13:15</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Cvrle &ndash; Nikad ne leti&scaron; sam 3D sinh</h2>
+<p style="text-align: justify;">Režiser: &Aacute;rni &Aacute;sgeirsson</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: animirana avantura</p>
+<p style="text-align: justify;">Trajanje: 85 min.</p>
+<p style="text-align: justify;">Termini: sub/ned 13:00</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Leo da Vinci: Misija Mona Lisa sinh</h2>
+<p style="text-align: justify;">Režiser: Sergio Manfio</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: animirana avantura</p>
+<p style="text-align: justify;">Trajanje: 82 min.</p>
+<p style="text-align: justify;">Termini: sub/ned 11:30</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Ukradena princeza sinh</h2>
+<p style="text-align: justify;">Režiser: Oleh Malamuzh</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: animirana avantura</p>
+<p style="text-align: justify;">Trajanje: 91 min.</p>
+<p style="text-align: justify;">Termini: sub/ned 14:15</p>
+<p>&nbsp;</p>
+<h2 style="text-align: justify;">Zec Petar sinh</h2>
+<p style="text-align: justify;">Režiser: Will Gluck</p>
+<p style="text-align: justify;">Glumci: sinhronizovano</p>
+<p style="text-align: justify;">Žanr: avantura, porodični</p>
+<p style="text-align: justify;">Trajanje: 95 min.</p>
+<p style="text-align: justify;">Termini: sub/ned 12:15</p>
+<div class="clanak">
+<p style="text-align: justify;">Termini: sub/ned 12:15</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span class="izvor">&nbsp;</span></p>
+</div>
+<div class="postViews clear">&nbsp;</div>
+<div class="post-tags clear">&nbsp;</div>]]></string>
+    <string name="bioskop_latitude">44.769866</string>
+    <string name="bioskop_longitude">17.189272</string>
+    <string name="sokolski_url">http://www.banjaluka-tourism.com/media/k2/items/cache/500a44935c8320008f1c713a63e32b8e_L.jpg</string>
+    <string name="sokolski_name">Zgrada Sokolskog doma</string>
+    <string name="sokolski_latitude">44.770924</string>
+    <string name="sokolski_longitude">17.185459</string>
+    <string name="sokolski_description"><![CDATA[<p>Zgrada Sokolskog doma potiče iz 1934. godine kada je Banjaluka bila sredi&scaron;te Vrbaske banovine a njen ban Svetislav Tisa Milosavljević. Izgrađena je sa karakterističnim, stepenasto usječenim arhivoltama i visokom ukra&scaron;enom atikom na pročelju, sa elementima &laquo;srpskovizantijskog stila&raquo;. Dispozicija objekta izražava funkcionalnost i sportsku namjenu. Zgrada je, do danas, gotovo u potpunosti sačuvala namjenu i autentičan izgled.</p>]]></string>
+    <string name="aquana_name">Vodeni park Aquana</string>
+    <string name="aquana_url">https://i1.wp.com/aquana.ba/wp-content/uploads/2017/02/akvana-1.jpg?w=604</string>
+    <string name="aquana_description"><![CDATA[<p>VODENI PARK AQUANA,<br /> koji se prostire na 38.000 metara kvadratnih, je najveća turistička i zabavna atrakcija ove vrste u Banjoj Luci i &scaron;irem okruženju. Smje&scaron;ten je u neposrednoj blizini centra grada u banjolučkom naselju Borik.<br /> U sastavu akvaparka nalaze se tri bazena: dječiji, plivački i bazen sa atrakcijama (tobogan dužine 100 metara, vodeni tok, vrtlog, fontane, masažna leži&scaron;ta i masažni mlazevi) ukupne vodene povr&scaron;ine od 1.500 metara kvadratnih, kao i velike zelene kaskade i povr&scaron;ine sa prirodnim hladom od 24.000 metara kvadratnih.<br /> Najsavremenija postrojenja za preči&scaron;ćavanje vode garantuju higijensku ispravnost i besprijekornu čistoću vode koja se mijenja pet puta u toku 24 časa. Voda se zagrijava na prijatnih 26 -28 stepeni Celzijusovih.<br /> U kompleksu Aquane su dva ko&scaron;arka&scaron;ka terena i teren za odbojku na pijesku, picerija za kupače Sorriso i dva kafea &ndash; Aquarello i Oaza.<br /> Na spratu se nalazi restoran Mediterraneo sa ekskluzivnim enterijerom i predivanim pogledom na park i bazen. Na meniju su razni mediteranski specijaliteti od morske ribe i plodova mora. U sklopu restorana je i odvojeni VIP salon sa 10 mjesta i internet konekcijom, kao i Rouge lounge bar, sa urbanim i nesvakida&scaron;njim ambijentom.<br /> Sezona akvaparka počinje krajem maja i traje do septembra, a radno vrijeme je svakim radnim danom od 10 do 19 časova a vikendom od 9 do 19 časova.</p>]]></string>
+    <string name="aquana_latitude">44.774196</string>
+    <string name="aquana_longitude">17.205720</string>
+    <string name="stadion_latitude">44.775880</string>
+    <string name="stadion_longitude">17.199837</string>
+    <string name="stadion_name">Gradski stadion Banja Luka</string>
+    <string name="stadion_url">http://www.fkborac.net/wp-content/uploads/2013/04/stadion-2013.jpg</string>
+    <string name="stadion_description"><![CDATA[<p style="text-align: justify;"><strong>Gradski stadion Banja Luka<br /> Kapacitet: 9 730 ( zapad: 2 912,&nbsp; istok: 4 326, sjever: 2 492 )<br /> Adresa: Vladike Platona 6,&nbsp; 78000 Banja Luka</strong></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">Dana&scaron;nji stadion Borca je zapravo stadion FK Kraji&scaron;nik koji je četrdesetih godina pro&scaron;log vijeka bio čuveniji klub od Borca. Izgradio ga je kao donator Borca Bogoljub Kujundžić i stadion se tako zvao &bdquo;Stadion Bana Kujundžića&ldquo;. U vihoru rata i poratnom osvetom i nepravdom, Kraji&scaron;nik je nestao. Od tada do danas stadion službeno nosi naziv &bdquo;Gradski stadion Banjaluka&ldquo;.</p>
+<p style="text-align: justify;">Fudbalski život u Banjoj Luci prije Prvog svjetskog rata odvijao se na Banjolučkom polju. Tamo su bili treninzi, tamo su odigravane utakmice, zvanične i nezvanične, tu su mnogi načinili prve fudbalske korake, odatle su mnogi krenuli na put svoje fudbalske afirmacije.</p>
+<p style="text-align: justify;">Po&scaron;to je fudbal sve vi&scaron;e zaokupljao Banjalučane, javila se potreba i za pravim stadionom. Svečano otvaranje obavljeno je 5. septembra 1937. godine, a u &bdquo;Vrbaskim novinama&ldquo; tri dana kasnije objavljen je tekst pod naslovom: &bdquo;U nedjelju je otvoren stadion &lsquo;Bana Kujundžića\'&ldquo;, u kojem je između ostalog pisalo:</p>
+<p style="text-align: justify;">&bdquo;U nedjelju je u Banjoj Luci održana rijetka sportska svečanost. U prisustvu bana Bogoljuba Kujundžića, komandanta Vrbaske divizijske oblasti, generala Milivoja Alimpića, zatim velikog broja sportista, svečano je otvoren novi sportski stadion izgrađen na biv&scaron;em igrali&scaron;tu Kraji&scaron;nika. Kao znak zahvanosti za veliku pomoć bana Kujundžića, stadion je dobio njegovo ime. Prvu utakmicu odigrali su Hajduk (Banja Luka) i Meteor (Krupa), a poslije toga snagu su odmjerili domaći Kraji&scaron;nik i slavni beogradski BSK.&ldquo;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">U drugoj fazi igrali&scaron;te je ograđeno daskama, vrlo brzo je inženjer Žarko Malić podstakao izgradnju manjih drvenih tribina. Na tameljima tog stadiona kasnije je podignut sada&scaron;nji Gradski, koji je, ba&scaron;&nbsp; kao i Banja Luka, mijenjao izgled, dograđivao se, &scaron;irio. On je za sve ove minule decenije izrastao u pravi fudbalski hram na kojem su se vojevale mnoge bitke, na kojem su igrali veliki klubovi, na kojem su stasali brojni asovi.</p>
+<p style="text-align: justify;"><strong>HRONOLOGIJA</strong></p>
+<p style="text-align: justify;"><strong>1937. godina</strong></p>
+<p style="text-align: justify;">Svečano otvoren stadion u Banjoj Luci, koji je dobio ime po banu Bogoljubu Kujundžiću, a na njegovim temeljima kasnije je izrastao sada&scaron;nji Gradski stadion. Ubrzo su izgrađene manje tribine, naravno drvene.</p>
+<p style="text-align: justify;"><strong>1945. godina</strong></p>
+<p style="text-align: justify;">Poslije četiri godine pauze obnovljeni Borac, nakon oslobođenja Banje Luke, odigrao je na Gradskom stadionu prvu prijateljsku utakmicu, rival mu je bila ekipa 53. divizije.</p>
+<p style="text-align: justify;"><strong>1959. godina</strong></p>
+<p style="text-align: justify;">Napravljene su tribine za stajanje, sjeverna i južna.</p>
+<p style="text-align: justify;"><strong>1973. godina</strong></p>
+<p style="text-align: justify;">Izgrađena kompletna zapadna tribina u sada&scaron;njem obliku i potpuno pokrivena.</p>
+<p style="text-align: justify;">Na Gradskom stadionu 11. oktobra 1973. godine zasijali su reflektori. Odigrane su dvije utakmice. U predigi su se sastali najbolji igrači Republičke i Zonske lige, a u glavnoj su igrali Borac i A reprezentacija Jugoslavije.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>1981. godina</strong></p>
+<p style="text-align: justify;">Sru&scaron;ene su istočne tribine za stajanje. Na tom mjestu podignute su nove, koji su i danas u upotrebi, a na kojim se okupljaju najvjerniji navijači Borca, &bdquo;Le&scaron;inari&ldquo;.</p>
+<p style="text-align: justify;"><strong>2001. godina</strong></p>
+<p style="text-align: justify;">Poslije prijateljske utakmica Borac &ndash; reprezentacija Jugoslavije, koja je odigrana 3. oktobra&nbsp; 2001. godine, sru&scaron;en dio sjevernih tribina, a onda su uklonjene i one na jugu.</p>
+<p style="text-align: justify;"><strong>2007. godina</strong></p>
+<p style="text-align: justify;">Iza Gradskog stadiona decenijama je bilo pomoćno igrali&scaron;te, prvo od &scaron;ljake, koje je kasnije busenovano. Kada je zavr&scaron;ena zgrada Vlade Republike Srpske (21. novembra 2007. godine), na tada&scaron;njem pomoćnom igrali&scaron;tu napravljen je parking.</p>
+<p style="text-align: justify;"><strong>2010. godina</strong></p>
+<p style="text-align: justify;">Renovirana zapada i istočna tribina Gradskog stadiona, na zapadnoj i istočnoj tribini postavljenje nove stolice, renovirane su svlačionice, novinarske lože, Trofejna sala, reflektori, postavljeno novo ozvučenje, reflektori na zapadnoj tribini, video nadzor stadiona, sređene klupske prostorije&hellip;.</p>
+<p style="text-align: justify;"><strong>2012. godina</strong></p>
+<p style="text-align: justify;">Izgrađena je sjeverna tribina sa 2 492 sjedeća mjesta.</p>]]></string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_error">Not loaded ... Try again when you establish a connection to the Internet</string>
+    <string name="title_activity_error">Error</string>
+</resources>
