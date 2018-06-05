@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Visit Banja Luka</string>
+    <string name="added_to_fav">dodata u omiljeno</string>
+    <string name="removed_from_fav">uklonjena iz omiljenog</string>
+    <string name="item">Stavka :</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Podešavanja</string>

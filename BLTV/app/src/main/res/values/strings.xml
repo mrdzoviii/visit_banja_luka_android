@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Visit Banja Luka</string>
+    <string name="added_to_fav">added to favorites</string>
+    <string name="removed_from_fav">removed from favorites</string>
+    <string name="item">Item :</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>

@@ -98,7 +98,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                     IFragment fragment= (IFragment) AppController.tabPager.getItem(item.getCategory());
                     ((ItemAdapter)fragment.getAdapter()).update(item);
                     ((ItemAdapter)AppController.tabPager.getFavouritesFragment().getAdapter()).remove(item);
-                    Toast.makeText(activity, item.getTitle() + " unliked", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.removed_from_fav), Toast.LENGTH_LONG).show();
                 } else {
                     item.setLiked(true);
                     new Thread(() -> {
@@ -106,7 +106,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
                     }).start();
                     holder.button.setBackgroundResource(R.drawable.ic_liked_48dp);
                     ((ItemAdapter)AppController.tabPager.getFavouritesFragment().getAdapter()).add(item);
-                    Toast.makeText(activity, item.getTitle() + " liked", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.added_to_fav), Toast.LENGTH_LONG).show();
                 }
             });
         }
