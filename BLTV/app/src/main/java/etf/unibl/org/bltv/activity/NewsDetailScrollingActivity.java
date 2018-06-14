@@ -15,6 +15,7 @@ import com.google.gson.Gson;
 
 import etf.unibl.org.bltv.AppController;
 import etf.unibl.org.bltv.R;
+import etf.unibl.org.bltv.adapter.TabPager;
 import etf.unibl.org.bltv.db.AppDatabase;
 import etf.unibl.org.bltv.model.news.Article;
 import etf.unibl.org.bltv.model.news.NewsModel;
@@ -39,8 +40,9 @@ public class NewsDetailScrollingActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         int id = intent.getIntExtra("id", 0);
-        if (id != 0) {
-            for (NewsModel tmp : AppController.tabPager.getNewsFragment().getNews()) {
+        TabPager pager=AppController.tabPager;
+        if (id != 0 && pager!=null) {
+            for (NewsModel tmp : pager.getNewsFragment().getNews()) {
                 if (tmp.getNewsId().equals(id)) {
                     news = tmp;
                 }
