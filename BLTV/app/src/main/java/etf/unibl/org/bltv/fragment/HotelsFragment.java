@@ -78,23 +78,6 @@ public class HotelsFragment extends Fragment implements IFragment {
     public void onStart() {
         super.onStart();
         load();
-        //prikazivanje kartica
-
-        /*recyclerView = getActivity().findViewById(R.id.rvHotel);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemViewCacheSize(20);
-        recyclerView.setDrawingCacheEnabled(true);
-        recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-        layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
-        //mAdapter = new ItemAdapter(items,getActivity());
-        recyclerView.setAdapter(mAdapter);
-       /* if(!pulled){
-            pulled=true;
-            System.out.println("HOTEL");
-            new ItemsTask(items,mAdapter,Item.HOTEL).execute(getActivity());
-        }*/
-
     }
     private void load(){
             recyclerView = AppController.mainActivity.findViewById(R.id.rvHotel);

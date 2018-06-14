@@ -81,7 +81,6 @@ public class FavouritesFragment extends Fragment implements IFragment {
         recyclerView.setLayoutManager(layoutManager);
         mAdapter= new ItemAdapter(MainActivity.favItems,getActivity(),this);
         recyclerView.setAdapter(mAdapter);
-        System.out.println("Fav load"+MainActivity.favItems.size());
     }
 
     @Override

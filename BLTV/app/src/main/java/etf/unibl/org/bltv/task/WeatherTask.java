@@ -34,7 +34,7 @@ public class WeatherTask extends AsyncTask<Activity,Void,CurrentWeather> {
     @Override
     protected CurrentWeather doInBackground(Activity... contexts) {
         context = contexts[0];
-        Log.e(TAG, "start aynctask to get coupons");
+        Log.e(TAG, "start aynctask to get time");
         return getWeatherFromServer();
     }
 
@@ -42,9 +42,9 @@ public class WeatherTask extends AsyncTask<Activity,Void,CurrentWeather> {
     protected void onPostExecute(CurrentWeather currentWeather) {
         super.onPostExecute(currentWeather);
         if(currentWeather!=null){
-            ImageView icon=context.findViewById(R.id.icon);
+            /*ImageView icon=context.findViewById(R.id.icon);
             GlideApp.with(AppController.cacheContext).load(context.getString(R.string.pull_icon)+currentWeather.getWeather().get(0).getIcon()+".png")
-                    .into(icon);
+                    .into(icon);*/
             TextView temp=context.findViewById(R.id.current_temp);
             temp.setText(getCelsius(currentWeather.getMain().getTemp())+context.getString(R.string.celsius));
             TextView humidity=context.findViewById(R.id.humidity);
@@ -72,28 +72,8 @@ public class WeatherTask extends AsyncTask<Activity,Void,CurrentWeather> {
         return weather;
     }
     public CurrentWeather getWeatherFromServer() {
-        String serviceUrl = context.getString(R.string.pull_weather);
-        URL url = null;
         try {
             Log.d(TAG, "call rest service to get json response");
-            /*url = new URL(serviceUrl);
-
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setDoOutput(true);
-            connection.setConnectTimeout(4000);
-            connection.setReadTimeout(4000);
-            connection.connect();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuffer response=new StringBuffer();
-            String line="";
-            while((line=bufferedReader.readLine())!=null){
-                response.append(line);
-            }
-            bufferedReader.close();
-            System.out.println(response.toString());
-            //pass buffered reader to convert json to java object using gson
-            return convertJsonToObject(response.toString());*/
             OkHttpClient client=new OkHttpClient();
             Request request = new Request.Builder()
                     .url(context.getString(R.string.pull_weather))

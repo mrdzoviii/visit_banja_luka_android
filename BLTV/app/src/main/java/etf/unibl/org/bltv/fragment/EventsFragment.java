@@ -52,7 +52,6 @@ public class EventsFragment extends Fragment implements IFragment {
 
     @Override
     public RecyclerView.Adapter getAdapter() {
-        System.out.println("Event adapter");
         return mAdapter;
     }
     public EventsFragment() {
@@ -74,21 +73,7 @@ public class EventsFragment extends Fragment implements IFragment {
     public void onStart() {
         super.onStart();
         load();
-        //prikazivanje kartica
 
-      /* recyclerView = getActivity().findViewById(R.id.rvEvent);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemViewCacheSize(20);
-        recyclerView.setDrawingCacheEnabled(true);
-        recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-        layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
-
-        recyclerView.setAdapter(mAdapter);
-        /*if(!pulled){
-            pulled=true;
-            new ItemsTask(items,mAdapter,Item.EVENT).execute(getActivity());
-        }*/
 
     }
     private void load(){

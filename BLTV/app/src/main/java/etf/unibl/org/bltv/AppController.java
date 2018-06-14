@@ -30,7 +30,6 @@ public class AppController extends Application {
     public static final String TAG= AppController.class.getSimpleName();
     private RequestQueue mRequestQueue;
     public static Context cacheContext;
-    public static Context fragmentsContext;
     public static boolean language=false;
     public static TabPager tabPager;
 

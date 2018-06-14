@@ -55,10 +55,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         AppController.mainActivity=this;
-        AppController.fragmentsContext=getApplicationContext();
-        System.out.println("LOCALE DEFAULT:" + Resources.getSystem().getConfiguration().locale.getLanguage());
         String lang = getPersistedData(getApplicationContext(), Resources.getSystem().getConfiguration().locale.getLanguage());
-        System.out.println("Lang"+lang);
         if(lang.equals("sr"))
             setLocale(getApplicationContext(), "sr");
         else
@@ -76,15 +73,11 @@ public class MainActivity extends AppCompatActivity
                 if(searchMenuItem!=null) {
                     if(tab.getPosition()==0 || tab.getPosition()==5) {
                         searchMenuItem.setVisible(false);
-                        System.out.println("Search hidden");
                     }else{
                             searchMenuItem.setVisible(true);
                     }
                     searchMenuItem.collapseActionView();
                 }
-                /*if(tab.getPosition()==5){
-                    new FavTask(tabPager.getFavouritesFragment().getItems(),tabPager.getFavouritesFragment().getAdapter()).execute(AppController.mainActivity);
-                }*/
             }
 
             @Override
@@ -122,13 +115,14 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        /*SearchManager searchManager =
-                (SearchManager) getSystemService(Context.SEARCH_SERVICE);*/
         searchMenuItem = menu.findItem(R.id.action_search);
         searchView =
                 (SearchView) searchMenuItem.getActionView();
@@ -144,7 +138,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public boolean onQueryTextChange(String newText) {
                 int position=tabs.getSelectedTabPosition();
-                System.out.println(position);
                 if(newText!=null) {
                     String pattern = ".*" + newText.toLowerCase() + ".*";
                     List<Item> items = null;
@@ -165,8 +158,6 @@ public class MainActivity extends AppCompatActivity
                 return false;
             }
         });
-       /* searchView.setSearchableInfo(
-                searchManager.getSearchableInfo(getComponentName()));*/
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -292,5 +283,14 @@ public class MainActivity extends AppCompatActivity
         return preferences.getString(SELECTED_LANGUAGE, defaultLanguage);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        System.out.println("DESTROYED MAIN ACTIVITY");
+    }
 }

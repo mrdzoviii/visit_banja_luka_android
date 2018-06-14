@@ -28,7 +28,6 @@ public class SplashActivity extends AppCompatActivity {
         new Thread(() -> {
             MainActivity.favItems.clear();
             MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
-            System.out.println(MainActivity.favItems.size()+"  fav items size");
         }).start();
         Intent intent=new Intent(this,MainActivity.class);
         startActivity(intent);

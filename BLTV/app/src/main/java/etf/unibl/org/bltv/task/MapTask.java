@@ -41,7 +41,6 @@ public class MapTask extends AsyncTask<Activity, Void, List<Item>> {
         super.onPostExecute(items);
         if(items!=null){
             for(Item i:dbItems){
-                System.out.println(i.getId()+" : "+i.getTitle());
                 if(!items.contains(i)){
                     items.add(i);
                     Marker marker=mMap.addMarker(new MarkerOptions().position(new LatLng(i.getLatitude(),i.getLongitude())).title(i.getTitle()));

@@ -82,22 +82,6 @@ public class MonumentsFragment extends Fragment implements IFragment {
     public void onStart() {
         super.onStart();
         load();
-        //prikazivanje kartica
-/*
-        recyclerView = getActivity().findViewById(R.id.rvMonument);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setItemViewCacheSize(20);
-        recyclerView.setDrawingCacheEnabled(true);
-        recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-        layoutManager = new LinearLayoutManager(getActivity());
-        recyclerView.setLayoutManager(layoutManager);
-       // mAdapter = new ItemAdapter(items,getActivity());
-        recyclerView.setAdapter(mAdapter);
-        /*if(!pulled){
-            pulled=true;
-            new ItemsTask(items,mAdapter,Item.MONUMENT).execute(getActivity());
-        }*/
-
     }
 
     private void load(){

@@ -28,49 +28,6 @@ public class TabPager extends FragmentStatePagerAdapter {
     public void setActivity(Activity activity) {
         this.activity = activity;
     }
-    /*
-    public FavouritesFragment getFavouritesFragment() {
-        if(favouritesFragment==null){
-            favouritesFragment=new FavouritesFragment();
-        }
-        return favouritesFragment;
-    }
-
-    public NewsFragment getNewsFragment() {
-        if(newsFragment==null){
-            newsFragment=new NewsFragment();
-        }
-        return newsFragment;
-    }
-
-    public InstitutionsFragment getInstitutionsFragment() {
-        if(institutionsFragment==null){
-            institutionsFragment=new InstitutionsFragment();
-        }
-        return institutionsFragment;
-    }
-
-    public MonumentsFragment getMonumentsFragment() {
-        if(monumentsFragment==null){
-            monumentsFragment=new MonumentsFragment();
-        }
-        return monumentsFragment;
-    }
-
-    public HotelsFragment getHotelsFragment() {
-        if(hotelsFragment==null){
-            hotelsFragment=new HotelsFragment();
-        }
-        return hotelsFragment;
-    }
-
-    public EventsFragment getEventsFragment() {
-        if(eventsFragment==null){
-            eventsFragment=new EventsFragment();
-        }
-        return eventsFragment;
-    }
-*/
 
     public NewsFragment getNewsFragment() {
         return newsFragment;
