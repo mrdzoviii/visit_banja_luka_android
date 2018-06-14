@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onStart() {
         super.onStart();
+        AppController.mainActivity=this;
     }
 
     @Override
