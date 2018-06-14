@@ -27,11 +27,14 @@ public class ItemsTask extends AsyncTask<Activity, Void, List<Item>> {
     @Override
     protected List<Item> doInBackground(Activity... contexts) {
         context = contexts[0];
-        Log.e(TAG, "start asynctask to retrieve items");
-        AppDatabase database=AppDatabase.getAppDatabase(context);
-        List<Item> dbItems=database.itemDao().getByCategory(category);
+        if(context!=null) {
+            Log.e(TAG, "start asynctask to retrieve items");
+            AppDatabase database = AppDatabase.getAppDatabase(context);
+            List<Item> dbItems = database.itemDao().getByCategory(category);
 
-        return dbItems;
+            return dbItems;
+        }
+        return null;
     }
     @Override
     protected void onPostExecute(List<Item> dbItems) {
