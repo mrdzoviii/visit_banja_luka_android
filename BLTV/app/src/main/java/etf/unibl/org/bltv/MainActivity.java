@@ -122,6 +122,17 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        String lang = getPersistedData(getApplicationContext(), Resources.getSystem().getConfiguration().locale.getLanguage());
+        if(lang.equals("sr"))
+            setLocale(getApplicationContext(), "sr");
+        else
+            setLocale(getApplicationContext(), "en");
+
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         searchMenuItem = menu.findItem(R.id.action_search);
