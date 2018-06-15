@@ -2,6 +2,7 @@ package etf.unibl.org.bltv.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -70,7 +71,7 @@ public class InstitutionsFragment extends Fragment implements IFragment {
     @Override
     public void onStart() {
         super.onStart();
-        load();
+       // load();
         System.out.println("INSTITUONS ON START");
     }
 
@@ -83,6 +84,12 @@ public class InstitutionsFragment extends Fragment implements IFragment {
             pulled=true;
             new ItemsTask(items,mAdapter,Item.INSTITUTION).execute(AppController.mainActivity);
         }
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        load();
     }
 
     private void load(){
