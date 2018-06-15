@@ -24,6 +24,13 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+        SharedPreferences pref=getSharedPreferences("org.unibl.etf.bltv.db",MODE_PRIVATE);
+        if(pref.getBoolean("first_run",true)){
+            System.out.println("DATABASE_CLEAR");
+            pref.edit().putBoolean("first_run",false).apply();
+            AppDatabase.firstRun=true;
+
+        }
         final Activity activity=this;
         new Thread(() -> {
             MainActivity.favItems.clear();
