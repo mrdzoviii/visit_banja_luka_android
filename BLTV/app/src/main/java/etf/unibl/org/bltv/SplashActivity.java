@@ -29,6 +29,9 @@ public class SplashActivity extends AppCompatActivity {
             MainActivity.favItems.clear();
             MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
         }).start();
+        if(AppController.mainActivity!=null){
+            AppController.mainActivity.finish();
+        }
         Intent intent=new Intent(this,MainActivity.class);
         startActivity(intent);
         finish();
