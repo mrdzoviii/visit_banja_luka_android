@@ -7,7 +7,7 @@
         android:title="@string/language"
         android:entries="@array/listArray"
         android:entryValues="@array/listValues"
-        android:defaultValue="en"
+        android:defaultValue="sr"
         />
     <CheckBoxPreference
         android:defaultValue="true"

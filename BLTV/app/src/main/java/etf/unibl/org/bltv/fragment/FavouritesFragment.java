@@ -2,6 +2,7 @@ package etf.unibl.org.bltv.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -71,6 +72,14 @@ public class FavouritesFragment extends Fragment implements IFragment {
         load();
 
     }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mAdapter= new ItemAdapter(MainActivity.favItems,getActivity(),this);
+        System.out.println("FAV ON CREATE");
+    }
+
     private void load(){
         recyclerView =AppController.mainActivity.findViewById(R.id.rvFavorites);
         recyclerView.setHasFixedSize(true);
@@ -79,8 +88,9 @@ public class FavouritesFragment extends Fragment implements IFragment {
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        mAdapter= new ItemAdapter(MainActivity.favItems,getActivity(),this);
+
         recyclerView.setAdapter(mAdapter);
+        System.out.println("FAV ON START");
     }
 
     @Override

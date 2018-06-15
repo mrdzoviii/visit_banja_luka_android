@@ -2,6 +2,7 @@ package etf.unibl.org.bltv.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -49,15 +50,8 @@ public class MonumentsFragment extends Fragment implements IFragment {
     }
 
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter = new ItemAdapter(items, AppController.mainActivity);
+    private RecyclerView.Adapter mAdapter;
     private Boolean pulled=false;
-    {
-        //load();
-        if(!pulled){
-            pulled=true;
-            new ItemsTask(items,mAdapter,Item.MONUMENT).execute(AppController.mainActivity);
-        }
-    }
     @Override
     public String getTitle() {
         return "Monuments Fragment";
@@ -84,6 +78,17 @@ public class MonumentsFragment extends Fragment implements IFragment {
         load();
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mAdapter = new ItemAdapter(items, AppController.mainActivity,this);
+        if(!pulled){
+            pulled=true;
+            new ItemsTask(items,mAdapter,Item.MONUMENT).execute(AppController.mainActivity);
+        }
+        System.out.println("MONUMENTS on create");
+    }
+
     private void load(){
                 recyclerView = AppController.mainActivity.findViewById(R.id.rvMonument);
                 System.out.println(recyclerView);
@@ -93,8 +98,10 @@ public class MonumentsFragment extends Fragment implements IFragment {
                 recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
                 layoutManager = new LinearLayoutManager(getActivity());
                 recyclerView.setLayoutManager(layoutManager);
+
                 //mAdapter = new ItemAdapter(items,getActivity());
                 recyclerView.setAdapter(mAdapter);
+        System.out.println("MONUMENTS on start");
     }
     @Override
     public void onResume() {

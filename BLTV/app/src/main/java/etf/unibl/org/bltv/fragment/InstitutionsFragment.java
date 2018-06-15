@@ -2,6 +2,7 @@ package etf.unibl.org.bltv.fragment;
 
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -45,15 +46,9 @@ public class InstitutionsFragment extends Fragment implements IFragment {
     }
 
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter = new ItemAdapter(items, AppController.mainActivity);
+    private RecyclerView.Adapter mAdapter;
     private Boolean pulled=false;
-    {
-        //load();
-        if(!pulled){
-            pulled=true;
-            new ItemsTask(items,mAdapter,Item.INSTITUTION).execute(AppController.mainActivity);
-        }
-    }
+
     private  RecyclerView.LayoutManager layoutManager;
     long currentVisiblePosition = 0;
 
@@ -76,8 +71,20 @@ public class InstitutionsFragment extends Fragment implements IFragment {
     public void onStart() {
         super.onStart();
         load();
-
+        System.out.println("INSTITUONS ON START");
     }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        System.out.println("INSTITUTIONS ON CREATE");
+        mAdapter = new ItemAdapter(items, AppController.mainActivity,this);
+        if(!pulled){
+            pulled=true;
+            new ItemsTask(items,mAdapter,Item.INSTITUTION).execute(AppController.mainActivity);
+        }
+    }
+
     private void load(){
         recyclerView = AppController.mainActivity.findViewById(R.id.rvInstitutions);
         recyclerView.setHasFixedSize(true);
@@ -86,6 +93,7 @@ public class InstitutionsFragment extends Fragment implements IFragment {
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
+
         //mAdapter = new ItemAdapter(items,getActivity());
         recyclerView.setAdapter(mAdapter);
     }
