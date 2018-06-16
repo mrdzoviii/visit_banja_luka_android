@@ -5,13 +5,19 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.ContentProvider;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.util.Log;
 
+import java.util.concurrent.ExecutionException;
+
 import etf.unibl.org.bltv.R;
+import etf.unibl.org.bltv.util.GlideApp;
+import etf.unibl.org.bltv.util.ImageSaver;
 
 @Database(entities = {News.class,Item.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase INSTANCE;
+    public static RoomDatabase.Builder builder;
     public static boolean firstRun=false;
     public abstract NewsDao newsDao();
     public abstract ItemDao itemDao();
@@ -19,9 +25,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public static synchronized AppDatabase getAppDatabase(Context context) {
         ctx=context;
         if (INSTANCE == null) {
-            INSTANCE =
-                    Room.databaseBuilder(context, AppDatabase.class,context.getString(R.string.database_name) )
-                            .build();
+            INSTANCE=Room.databaseBuilder(context, AppDatabase.class,context.getString(R.string.database_name) ).build();
             INSTANCE.populateInitialData();
         }
         return INSTANCE;
@@ -32,6 +36,7 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
     private void  populateInitialData() {
+
         //==0
         if(firstRun){
             itemDao().clear();
@@ -120,6 +125,19 @@ public abstract class AppDatabase extends RoomDatabase {
             beginTransaction();
             try {
                 for (int i = 0; i < items.length; i++) {
+                    if(items[i].getPath()==null){
+                        try {
+                            Bitmap theBitmap = GlideApp.
+                                    with(ctx).asBitmap().
+                                    load(items[i].getUrl()).centerCrop().submit().get();
+                            String path= ImageSaver.saveToInternalStorage(theBitmap,ctx);
+                            items[i].setPath(path);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        }
+                    }
                     itemDao().insert(items[i]);
                 }
                 setTransactionSuccessful();

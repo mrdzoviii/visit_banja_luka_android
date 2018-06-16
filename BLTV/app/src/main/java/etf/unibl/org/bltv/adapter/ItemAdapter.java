@@ -2,7 +2,9 @@ package etf.unibl.org.bltv.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
+import android.support.v4.graphics.BitmapCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +15,13 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.google.android.gms.common.images.internal.ImageUtils;
 
 import java.sql.SQLOutput;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import etf.unibl.org.bltv.AppController;
 import etf.unibl.org.bltv.R;
@@ -26,6 +31,7 @@ import etf.unibl.org.bltv.db.Item;
 import etf.unibl.org.bltv.fragment.FavouritesFragment;
 import etf.unibl.org.bltv.fragment.IFragment;
 import etf.unibl.org.bltv.util.GlideApp;
+import etf.unibl.org.bltv.util.ImageSaver;
 
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
@@ -61,7 +67,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         if (item != null) {
             holder.txtTitle.setText(item.getTitle());
             holder.imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            GlideApp.with(activity).load(item.getUrl()).diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.imageView);
+            GlideApp.with(activity).load(item.getPath()).fitCenter().into(holder.imageView);
             if (item.getCategory()==Item.HOTEL) {
                 holder.ratingBar.setVisibility(RatingBar.VISIBLE);
                 holder.ratingBar.setNumStars(item.getHotelRate());

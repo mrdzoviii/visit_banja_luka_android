@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -32,17 +33,30 @@ public class SplashActivity extends AppCompatActivity {
 
         }
         final Activity activity=this;
-        new Thread(() -> {
-            MainActivity.favItems.clear();
-            MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
-        }).start();
-        if(AppController.mainActivity!=null){
-            AppController.mainActivity.finish();
-        }
-        Intent intent=new Intent(this,MainActivity.class);
-        startActivity(intent);
-        finish();
+        AsyncTask<Void,Void,Void> task=new AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... voids) {
+                MainActivity.favItems.clear();
+                MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void aVoid) {
+                super.onPostExecute(aVoid);
+                if(AppController.mainActivity!=null){
+                    AppController.mainActivity.finish();
+                }
+                Intent intent=new Intent(activity,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        };
+        task.execute(null,null);
+
 
     }
+
+
 
 }

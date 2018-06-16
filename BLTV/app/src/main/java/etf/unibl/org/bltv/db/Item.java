@@ -24,6 +24,7 @@ public class Item implements Serializable{
     public static final String COLUMN_HOTEL_RATE="hotel_rate";
     public static final String COLUMN_LONGITUDE="longitude";
     public static final String COLUMN_LATITUDE="latitude";
+    public static final String COLUMN_PATH="path";
     public static final Integer HOTEL=3;
     public static final Integer INSTITUTION=1;
     public static final Integer MONUMENT=2;
@@ -49,6 +50,17 @@ public class Item implements Serializable{
     private int category;
     @ColumnInfo(name=COLUMN_HOTEL_RATE)
     private int hotelRate;
+    @ColumnInfo(name=COLUMN_PATH)
+    private String path;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
     public static Item fromContentValues(ContentValues values) {
         final Item item = new Item();
         if (values.containsKey(COLUMN_ID)) {
