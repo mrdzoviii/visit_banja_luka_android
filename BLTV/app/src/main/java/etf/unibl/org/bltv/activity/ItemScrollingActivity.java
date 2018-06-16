@@ -47,7 +47,7 @@ public class ItemScrollingActivity extends AppCompatActivity  {
         System.out.println(item.getDescription());
         description.loadData("<p align=\"justify\">" + item.getDescription() + "</p>", "text/html", "UTF-8");
         //image.setImageResource(item.getUrl());
-        Glide.with(this).load(item.getUrl()).into(image);
+        Glide.with(this).load(item.getPath()).into(image);
         setTitle(item.getTitle());
 
 
