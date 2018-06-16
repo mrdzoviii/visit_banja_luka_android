@@ -4,14 +4,18 @@ import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.content.ContentValues;
+import android.support.annotation.NonNull;
 
 import java.sql.Timestamp;
+import java.util.Comparator;
 import java.util.Objects;
 
 import etf.unibl.org.bltv.model.news.NewsModel;
 
 @Entity(tableName = "news")
-public class News {
+public class News implements Comparable<News> {
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -122,5 +126,10 @@ public class News {
         this.setNewsID(model.getNewsId());
         setUrl(model.getImageUrl());
         setTitle(model.getTitle());
+    }
+
+    @Override
+    public int compareTo(@NonNull News o) {
+        return o.getNewsID()-newsID;
     }
 }

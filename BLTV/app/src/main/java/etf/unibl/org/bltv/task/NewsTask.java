@@ -132,6 +132,7 @@ public class NewsTask extends AsyncTask<Activity,Void,List<NewsModel>> {
                         change = true;
                     }
                 }
+                Collections.sort(news);
             if(change)
                 mAdapter.notifyDataSetChanged();
         }

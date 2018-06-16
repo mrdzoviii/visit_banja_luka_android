@@ -1,13 +1,16 @@
 package etf.unibl.org.bltv.model.news;
 
+import android.support.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.Comparator;
 import java.util.Objects;
 
 import etf.unibl.org.bltv.db.News;
 
-public class NewsModel implements Serializable {
+public class NewsModel implements Serializable,Comparable<NewsModel> {
     @SerializedName("vijestID")
     private Integer newsId;
     @SerializedName("Naslov")
@@ -24,6 +27,8 @@ public class NewsModel implements Serializable {
     public void setBody(String body) {
         this.body = body;
     }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -77,5 +82,10 @@ public class NewsModel implements Serializable {
         setBody(news.getContent());
         setImageUrl(news.getUrl());
         setTitle(news.getTitle());
+    }
+
+    @Override
+    public int compareTo(@NonNull NewsModel o) {
+        return o.getNewsId()-newsId;
     }
 }
