@@ -38,11 +38,11 @@ public abstract class AppDatabase extends RoomDatabase {
     private void  populateInitialData() {
 
         //==0
-        if(firstRun){
+      /*  if(firstRun){
             itemDao().clear();
             newsDao().clear();
             firstRun=false;
-        }
+        }*/
         /*if (itemDao().count() > 0) {
             itemDao().clear();
         }*/
