@@ -25,6 +25,8 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 import etf.unibl.org.bltv.activity.AboutActivity;
 import etf.unibl.org.bltv.activity.CurrentWeatherActivity;
@@ -152,19 +154,21 @@ public class MainActivity extends AppCompatActivity
                 int position=tabs.getSelectedTabPosition();
                 if(newText!=null) {
                     String pattern = ".*" + newText.toLowerCase() + ".*";
-                    List<Item> items = null;
-                    if (position != 0 && position!=5) {
-                        IFragment fragment = (IFragment) AppController.tabPager.getItem(position);
-                        items = fragment.getItems();
-                        List<Item> tempItems = new ArrayList<>();
-                        for (Item i : items) {
-                            if (i.getTitle().toLowerCase().matches(pattern)) {
-                                tempItems.add(i);
+                    if (checkPattern(pattern)) {
+                        List<Item> items = null;
+                        if (position != 0 && position != 5) {
+                            IFragment fragment = (IFragment) AppController.tabPager.getItem(position);
+                            items = fragment.getItems();
+                            List<Item> tempItems = new ArrayList<>();
+                            for (Item i : items) {
+                                if (i.getTitle().toLowerCase().matches(pattern)) {
+                                    tempItems.add(i);
+                                }
                             }
+                            ItemAdapter adapter = new ItemAdapter(tempItems, fragment.getActivity());
+                            fragment.getRecyclerView().setAdapter(adapter);
+                            return true;
                         }
-                        ItemAdapter adapter = new ItemAdapter(tempItems, fragment.getActivity());
-                        fragment.getRecyclerView().setAdapter(adapter);
-                        return true;
                     }
                 }
                 return false;
@@ -304,5 +308,13 @@ public class MainActivity extends AppCompatActivity
     protected void onDestroy() {
         super.onDestroy();
         System.out.println("DESTROYED MAIN ACTIVITY");
+    }
+    private boolean checkPattern(String pattern){
+        try {
+            Pattern.compile(pattern);
+        } catch (PatternSyntaxException exception) {
+            return false;
+        }
+        return true;
     }
 }
