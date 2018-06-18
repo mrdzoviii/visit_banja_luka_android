@@ -35,7 +35,7 @@
     <string name="caching">Keširanje</string>
     <string name="caching_msg">Omogućava keširanje vesti na uređaju</string>
     <string name="database_name">bltv_db</string>
-    <string name="pull_news">http://dtp.nezavisne.com/app/rubrika/11/1/15</string>
+    <string name="pull_news">http://dtp.nezavisne.com/app/podrubrika/18/1/20</string>
     <string name="pull_article">http://dtp.nezavisne.com/app/v2/vijesti/</string>
     <string name="pull_weather">http://api.openweathermap.org/data/2.5/weather?q=Banja%20Luka,ba&amp;appid=3d27163de85684aaec32e42fa535675d</string>
     <string name="pull_icon">http://openweathermap.org/img/w/</string>
