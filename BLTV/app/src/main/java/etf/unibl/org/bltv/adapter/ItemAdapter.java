@@ -67,7 +67,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         if (item != null) {
             holder.txtTitle.setText(item.getTitle());
             holder.imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            GlideApp.with(activity).load(item.getPath()).centerCrop().into(holder.imageView);
+            GlideApp.with(activity).load(item.getPath()).centerCrop().placeholder(R.drawable.error404).into(holder.imageView);
             if (item.getCategory()==Item.HOTEL) {
                 holder.ratingBar.setVisibility(RatingBar.VISIBLE);
                 holder.ratingBar.setNumStars(item.getHotelRate());

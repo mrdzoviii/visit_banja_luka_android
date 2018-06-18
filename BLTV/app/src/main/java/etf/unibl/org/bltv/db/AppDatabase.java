@@ -8,6 +8,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
 
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 import etf.unibl.org.bltv.R;
@@ -131,6 +132,42 @@ public abstract class AppDatabase extends RoomDatabase {
             } finally {
                 endTransaction();
             }
+        }
+    }
+    public boolean downloadImages(){
+        boolean result=false;
+        beginTransaction();
+        try {
+        List<Item> items=itemDao().getAll();
+        for (Item i:items) {
+            if(i.getPath()==null){
+                try {
+                    Bitmap theBitmap = GlideApp.
+                            with(ctx).asBitmap().
+                            load(i.getUrl()).centerCrop().submit().get();
+                    String path= ImageSaver.saveToInternalStorage(theBitmap,ctx);
+                    i.setPath(path);
+                    INSTANCE.itemDao().update(i);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                    result=false;
+                    System.out.println("Image not downloaded");
+                    return result;
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                    result=false;
+                    System.out.println("Image not downloaded");
+                    return false;
+                }
+            }
+        }
+            setTransactionSuccessful();
+            System.out.println("Image downloaded");
+            result=true;
+        } finally {
+            endTransaction();
+
+            return result;
         }
     }
 }

@@ -25,12 +25,21 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+
+
         final Activity activity=this;
         AsyncTask<Void,Void,Void> task=new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... voids) {
                 MainActivity.favItems.clear();
                 MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
+                SharedPreferences pref=getSharedPreferences("org.unibl.etf.bltv.db",MODE_PRIVATE);
+                if(pref.getBoolean("images_not_downloaded",true)){
+
+                    if(AppDatabase.getAppDatabase(activity).downloadImages()){
+                        pref.edit().putBoolean("image_not_downloaded",false).apply();
+                    }
+                }
                 return null;
             }
 

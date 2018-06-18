@@ -16,6 +16,7 @@ import java.util.Map;
 
 import etf.unibl.org.bltv.R;
 import etf.unibl.org.bltv.db.Item;
+import etf.unibl.org.bltv.util.GlideApp;
 
 public class ItemScrollingActivity extends AppCompatActivity  {
     private Item item;
@@ -47,7 +48,7 @@ public class ItemScrollingActivity extends AppCompatActivity  {
         System.out.println(item.getDescription());
         description.loadData("<p align=\"justify\">" + item.getDescription() + "</p>", "text/html", "UTF-8");
         //image.setImageResource(item.getUrl());
-        Glide.with(this).load(item.getPath()).into(image);
+        GlideApp.with(this).load(item.getPath()).placeholder(R.drawable.error404).into(image);
         setTitle(item.getTitle());
 
 
