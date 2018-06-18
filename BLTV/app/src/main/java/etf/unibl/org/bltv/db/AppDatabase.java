@@ -17,8 +17,6 @@ import etf.unibl.org.bltv.util.ImageSaver;
 @Database(entities = {News.class,Item.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase INSTANCE;
-    public static RoomDatabase.Builder builder;
-    public static boolean firstRun=false;
     public abstract NewsDao newsDao();
     public abstract ItemDao itemDao();
     private static Context ctx;
@@ -36,18 +34,7 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
     private void  populateInitialData() {
-
-        //==0
-      /*  if(firstRun){
-            itemDao().clear();
-            newsDao().clear();
-            firstRun=false;
-        }*/
-        /*if (itemDao().count() > 0) {
-            itemDao().clear();
-        }*/
        if (itemDao().count() == 0) {
-           System.out.println("FILL DATABASE");
             Item[] items = new Item[]{
                     new Item(null, ctx.getString(R.string.kastel_name), ctx.getString(R.string.kastel_description), ctx.getString(R.string.kastel_url),
                             Float.parseFloat(ctx.getString(R.string.kastel_latitude)), Float.parseFloat(ctx.getString(R.string.kastel_longitude)),
