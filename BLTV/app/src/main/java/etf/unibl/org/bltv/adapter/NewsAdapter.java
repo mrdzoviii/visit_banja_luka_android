@@ -55,7 +55,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         newsModel=item;
         holder.txtTitle.setText(item.getTitle());
         GlideApp.with(AppController.cacheContext).load(item.getImageUrl()).
-                placeholder(R.drawable.error404)
+                error(R.drawable.error404)
         .diskCacheStrategy(DiskCacheStrategy.ALL).skipMemoryCache(true).into(holder.imageView);
         holder.imageView.setOnClickListener(v -> {
             showArticle(item.getNewsId());

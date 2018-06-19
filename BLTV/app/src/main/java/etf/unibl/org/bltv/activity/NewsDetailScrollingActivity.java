@@ -54,7 +54,7 @@ public class NewsDetailScrollingActivity extends AppCompatActivity {
             } else {
                 setContent(news);
             }
-            GlideApp.with(AppController.cacheContext).load(news.getImageUrl()).placeholder(R.drawable.error404).into(image);
+            GlideApp.with(AppController.cacheContext).load(news.getImageUrl()).error(R.drawable.error404).into(image);
 
         }
 

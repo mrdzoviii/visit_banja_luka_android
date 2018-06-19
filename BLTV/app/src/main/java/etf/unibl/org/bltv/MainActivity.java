@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -224,6 +225,8 @@ public class MainActivity extends AppCompatActivity
         }
         else if(id==R.id.nav_events){
             tabs.getTabAt(4).select();
+        }else if(id==R.id.nav_rate_app){
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
         }
 
 

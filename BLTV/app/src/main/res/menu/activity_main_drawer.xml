@@ -58,6 +58,10 @@
                     android:icon="@drawable/ic_information_outline_black_48dp"
                     android:title="@string/nav_about" />
                 <item
+                    android:id="@+id/nav_rate_app"
+                    android:icon="@drawable/ic_star_black_48dp"
+                    android:title="@string/rate_app"/>
+                <item
                     android:id="@+id/nav_manage"
                     android:icon="@drawable/ic_menu_manage"
                     android:title="@string/nav_manage" />

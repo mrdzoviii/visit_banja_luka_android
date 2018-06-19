@@ -69,7 +69,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> im
         if (item != null) {
             holder.txtTitle.setText(item.getTitle());
             holder.imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            GlideApp.with(activity).load(item.getPath()).centerCrop().placeholder(R.drawable.error404).into(holder.imageView);
+            GlideApp.with(activity).load(item.getPath()).centerCrop().error(R.drawable.error404).into(holder.imageView);
             if (item.getCategory()==Item.HOTEL) {
                 holder.ratingBar.setVisibility(RatingBar.VISIBLE);
                 holder.ratingBar.setNumStars(item.getHotelRate());
@@ -172,9 +172,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> im
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
                 String charSequence=constraint.toString().toLowerCase();
-                if(charSequence.isEmpty()){
-                    items=itemsFiltered;
-                }else{
+                items=itemsFiltered ;
+                if(!charSequence.isEmpty()){
                     List<Item> filterList=new ArrayList<>();
                     for(Item i:items){
                         if(i.getTitle().toLowerCase().contains(charSequence)){

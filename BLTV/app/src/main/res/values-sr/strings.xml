@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Visit Banja Luka</string>
+    <string name="app_link">https://play.google.com/store/apps/details?id=etf.unibl.org.bltv</string>
+    <string name="rate_app">Oceni aplikaciju</string>
     <string name="added_to_fav">dodata u omiljeno</string>
+    <string name="app_copyright">Elektrotehnički fakultet Banja Luka</string>
     <string name="removed_from_fav">uklonjena iz omiljenog</string>
     <string name="item">Stavka :</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -17,7 +20,7 @@
     <string name="tab_weather">Vreme</string>
     <string name="tab_favourites">Omiljeno</string>
     <string name="celsius">°C</string>
-    <string name="version">1.03</string>
+    <string name="version">1.04</string>
     <string name="tab_exit">Izlaz</string>
     <string name="current_temperature">Trenutna temperature</string>
     <string name="pressure">Pritisak</string>
