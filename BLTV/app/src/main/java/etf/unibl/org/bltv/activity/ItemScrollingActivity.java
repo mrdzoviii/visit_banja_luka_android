@@ -32,6 +32,7 @@ public class ItemScrollingActivity extends AppCompatActivity  {
         toolbar.setNavigationOnClickListener(v -> {
             onBackPressed();
         });
+        setTitle(null);
         Intent intent = getIntent();
         item = (Item) intent.getSerializableExtra("item");
         RatingBar rating = findViewById(R.id.rating);
@@ -46,10 +47,10 @@ public class ItemScrollingActivity extends AppCompatActivity  {
         WebView description = findViewById(R.id.description);
         ImageView image = findViewById(R.id.image);
         System.out.println(item.getDescription());
-        description.loadData("<p align=\"justify\">" + item.getDescription() + "</p>", "text/html", "UTF-8");
+        description.loadData("<h1>"+item.getTitle()+"</h1>"+ "<p align=\"justify\">"+ item.getDescription() + "</p>", "text/html", "UTF-8");
         //image.setImageResource(item.getUrl());
         GlideApp.with(this).load(item.getPath()).placeholder(R.drawable.error404).into(image);
-        setTitle(item.getTitle());
+
 
 
     }

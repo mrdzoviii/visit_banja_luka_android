@@ -475,4 +475,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="news_error">Not loaded ... Try again when you establish a connection to the Internet</string>
     <string name="title_activity_error">Error</string>
+    <string name="city_menu">Banja Luka</string>
+    <string name="weather_menu">Current weather</string>
+    <string name="application_menu">Application</string>
 </resources>

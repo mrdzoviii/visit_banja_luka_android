@@ -471,4 +471,7 @@
 <p style="text-align: justify;">Renovirana zapada i istočna tribina Gradskog stadiona, na zapadnoj i istočnoj tribini postavljenje nove stolice, renovirane su svlačionice, novinarske lože, Trofejna sala, reflektori, postavljeno novo ozvučenje, reflektori na zapadnoj tribini, video nadzor stadiona, sređene klupske prostorije&hellip;.</p>
 <p style="text-align: justify;"><strong>2012. godina</strong></p>
 <p style="text-align: justify;">Izgrađena je sjeverna tribina sa 2 492 sjedeća mjesta.</p>]]></string>
+    <string name="city_menu">Banja Luka</string>
+    <string name="weather_menu">Vremenska prognoza</string>
+    <string name="application_menu">Aplikacija</string>
 </resources>
