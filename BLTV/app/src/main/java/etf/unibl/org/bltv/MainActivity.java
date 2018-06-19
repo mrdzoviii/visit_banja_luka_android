@@ -153,15 +153,16 @@ public class MainActivity extends AppCompatActivity
             public boolean onQueryTextChange(String newText) {
                 int position=tabs.getSelectedTabPosition();
                 if(newText!=null) {
-                    String pattern = ".*" + newText.toLowerCase() + ".*";
-                    if (checkPattern(pattern)) {
+                   // String pattern = ".*" + newText.toLowerCase() + ".*";
+                   // if (checkPattern(pattern)) {
+                        String pattern=newText.toLowerCase();
                         List<Item> items = null;
                         if (position != 0 && position != 5) {
                             IFragment fragment = (IFragment) AppController.tabPager.getItem(position);
                             items = fragment.getItems();
                             List<Item> tempItems = new ArrayList<>();
                             for (Item i : items) {
-                                if (i.getTitle().toLowerCase().matches(pattern)) {
+                                if (i.getTitle().toLowerCase().contains(pattern)) {
                                     tempItems.add(i);
                                 }
                             }
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity
                             return true;
                         }
                     }
-                }
+            //    }
                 return false;
             }
         });
