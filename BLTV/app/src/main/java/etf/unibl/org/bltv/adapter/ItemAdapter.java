@@ -9,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -20,6 +22,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.common.images.internal.ImageUtils;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -34,19 +37,18 @@ import etf.unibl.org.bltv.util.GlideApp;
 import etf.unibl.org.bltv.util.ImageSaver;
 
 
-public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
-    private final List<Item> items;
+public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> implements Filterable {
+    private  List<Item> items;
+    private  List<Item> itemsFiltered;
     private Activity activity;
     private IFragment fragment;
     public ItemAdapter(List<Item> items, Activity activity,IFragment fragment) {
         this.items = items;
+        this.itemsFiltered=this.items;
         this.activity = activity;
         this.fragment=fragment;
     }
-    public ItemAdapter(List<Item> items, Activity activity) {
-        this.items = items;
-        this.activity = activity;
-    }
+
 
     @NonNull
     @Override
@@ -122,6 +124,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     public void update(Item item){
         int index=items.indexOf(item);
         if(index>=0) {
+            System.out.println(item.getTitle()+" updated");
             Item item1=items.get(index);
             item1.setLiked(item.isLiked());
             notifyItemChanged(index);
@@ -161,6 +164,37 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     @Override
     public long getItemId(int position) {
         return items.get(position).getId();
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                String charSequence=constraint.toString().toLowerCase();
+                if(charSequence.isEmpty()){
+                    items=itemsFiltered;
+                }else{
+                    List<Item> filterList=new ArrayList<>();
+                    for(Item i:items){
+                        if(i.getTitle().toLowerCase().contains(charSequence)){
+                            filterList.add(i);
+                        }
+                    }
+                    items=filterList;
+                }
+
+                FilterResults filterResults=new FilterResults();
+                filterResults.values=items;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                items=(List<Item>)results.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

@@ -144,35 +144,30 @@ public class MainActivity extends AppCompatActivity
         searchView.setQueryHint(getString(R.string.search_hint));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                System.out.println(query);
-                return false;
+            public boolean onQueryTextSubmit(String newText) {
+                int position=tabs.getSelectedTabPosition();
+                System.out.println("submit:"+newText);
+                if(newText!=null) {
+                    if (position != 0 && position != 5) {
+                        IFragment fragment = (IFragment) AppController.tabPager.getItem(position);
+                        ((ItemAdapter)fragment.getAdapter()).getFilter().filter(newText);
+                        return false;
+                    }
+                }
+                return true;
             }
-
             @Override
             public boolean onQueryTextChange(String newText) {
                 int position=tabs.getSelectedTabPosition();
+                System.out.println("query:"+newText);
                 if(newText!=null) {
-                   // String pattern = ".*" + newText.toLowerCase() + ".*";
-                   // if (checkPattern(pattern)) {
-                        String pattern=newText.toLowerCase();
-                        List<Item> items = null;
                         if (position != 0 && position != 5) {
                             IFragment fragment = (IFragment) AppController.tabPager.getItem(position);
-                            items = fragment.getItems();
-                            List<Item> tempItems = new ArrayList<>();
-                            for (Item i : items) {
-                                if (i.getTitle().toLowerCase().contains(pattern)) {
-                                    tempItems.add(i);
-                                }
-                            }
-                            ItemAdapter adapter = new ItemAdapter(tempItems, fragment.getActivity());
-                            fragment.getRecyclerView().setAdapter(adapter);
-                            return true;
+                            ((ItemAdapter)fragment.getAdapter()).getFilter().filter(newText);
+                            return false;
                         }
                     }
-            //    }
-                return false;
+                return true;
             }
         });
         return super.onCreateOptionsMenu(menu);
@@ -310,12 +305,5 @@ public class MainActivity extends AppCompatActivity
         super.onDestroy();
         System.out.println("DESTROYED MAIN ACTIVITY");
     }
-    private boolean checkPattern(String pattern){
-        try {
-            Pattern.compile(pattern);
-        } catch (PatternSyntaxException exception) {
-            return false;
-        }
-        return true;
-    }
+
 }
