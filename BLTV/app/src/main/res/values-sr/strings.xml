@@ -17,7 +17,7 @@
     <string name="tab_weather">Vreme</string>
     <string name="tab_favourites">Omiljeno</string>
     <string name="celsius">°C</string>
-    <string name="version">1.00</string>
+    <string name="version">1.03</string>
     <string name="tab_exit">Izlaz</string>
     <string name="current_temperature">Trenutna temperature</string>
     <string name="pressure">Pritisak</string>
