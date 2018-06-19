@@ -27,7 +27,7 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
         setContentView(R.layout.activity_settings);
         getFragmentManager().beginTransaction().replace(android.R.id.content, new MyPreferenceFragment()).commit();
 
-        String lang=PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getString("language","sr");
+       /* String lang=PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).getString("language","sr");
         if("sr".equals(lang)) {
             Locale locale = new Locale("sr");
             Configuration config = getBaseContext().getResources().getConfiguration();
@@ -38,7 +38,7 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
             Configuration config = getBaseContext().getResources().getConfiguration();
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        }
+        }*/
         PreferenceManager.getDefaultSharedPreferences(AppController.cacheContext).registerOnSharedPreferenceChangeListener(this);
         setTitle(getString(R.string.action_settings));
     }
@@ -53,21 +53,11 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
         if (key.equals("language")) {
             String lang=sharedPreferences.getString("language","sr");
             System.out.println("LANG:"+lang);
-            if("sr".equals(lang)) {
+            /*if("sr".equals(lang)) {
                 setLocale(this,"sr");
-                /*
-                Locale locale = new Locale("sr");
-                Configuration config = getBaseContext().getResources().getConfiguration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());*/
             }else{
                 setLocale(this,"en");
-                /*
-                Locale locale=new Locale("en");
-                Configuration config = getBaseContext().getResources().getConfiguration();
-                config.locale = locale;
-                getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());*/
-            }
+            }*/
             restartActivity();
         }
     }
@@ -83,15 +73,11 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
         }
     }
     private void restartActivity() {
-        /*Intent intent = new Intent(this,SplashActivity.class);
+        Intent intent = new Intent(this,SplashActivity.class);
+        intent.putExtra("LANGUAGE_CHANGED",true);
         finish();
-        startActivity(intent);*/
-        Intent i = getBaseContext().getPackageManager().
-                getLaunchIntentForPackage(getBaseContext().getPackageName());
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        finish();
-        startActivity(i);
+        startActivity(intent);
+
     }
     //localization
 

@@ -58,11 +58,13 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         AppController.mainActivity=this;
+
         String lang = getPersistedData(getApplicationContext(), Resources.getSystem().getConfiguration().locale.getLanguage());
-        if(lang.equals("sr"))
+        System.out.println("MAIN LANG:"+lang);
+        /*if(lang.equals("sr"))
             setLocale(getApplicationContext(), "sr");
         else
-            setLocale(getApplicationContext(), "en");
+            setLocale(getApplicationContext(), "en");*/
        tabs=findViewById(R.id.tabs);
         tabPager=new TabPager(getSupportFragmentManager());
         tabPager.setActivity(this);
@@ -105,6 +107,18 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        if(AppController.languageChanged){
+            AppController.languageChanged=false;
+            System.out.println("LANG RECREATE");
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.activity_main_drawer);
+            Intent i = getApplicationContext().getPackageManager()
+                    .getLaunchIntentForPackage(getApplicationContext().getPackageName() );
+
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+        }
         navigationView.setNavigationItemSelectedListener(this);
     }
     @Override

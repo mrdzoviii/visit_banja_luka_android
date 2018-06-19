@@ -49,12 +49,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
        /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
-        String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
+       /* String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
         System.out.println("Lang about:"+lang);
         if(lang.equals("sr"))
             setLocale(getApplicationContext(), "sr");
         else
-            setLocale(getApplicationContext(), "en");
+            setLocale(getApplicationContext(), "en");*/
         setTitle(R.string.title_activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

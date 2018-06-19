@@ -22,12 +22,12 @@ public class CurrentWeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_weather);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
+       /* String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
         System.out.println("Lang about:"+lang);
         if(lang.equals("sr"))
             setLocale(getApplicationContext(), "sr");
         else
-            setLocale(getApplicationContext(), "en");
+            setLocale(getApplicationContext(), "en");*/
         setTitle(R.string.tab_weather);
         new WeatherTask().execute(this);
     }

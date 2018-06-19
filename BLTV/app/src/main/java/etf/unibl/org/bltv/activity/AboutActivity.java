@@ -29,12 +29,12 @@ public class AboutActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
+       /* String lang = getPersistedData(getApplicationContext(), Locale.getDefault().getLanguage());
         System.out.println("Lang about:"+lang);
         if(lang.equals("sr"))
             setLocale(getApplicationContext(), "sr");
         else
-            setLocale(getApplicationContext(), "en");
+            setLocale(getApplicationContext(), "en");*/
        setTitle(getString(R.string.nav_about));
     }
     @Override

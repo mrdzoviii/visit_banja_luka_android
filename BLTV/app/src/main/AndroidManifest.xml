@@ -57,6 +57,7 @@
         <activity
             android:name=".activity.CurrentWeatherActivity"
             android:label="@string/tab_weather"
+            android:configChanges="locale"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -115,7 +116,8 @@
 
         <activity
             android:name=".activity.MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:label="@string/title_activity_maps"
+            android:configChanges="locale">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="etf.unibl.org.bltv.MainActivity" />

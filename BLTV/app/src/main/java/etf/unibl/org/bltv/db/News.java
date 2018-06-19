@@ -6,8 +6,6 @@ import android.arch.persistence.room.PrimaryKey;
 import android.content.ContentValues;
 import android.support.annotation.NonNull;
 
-import java.sql.Timestamp;
-import java.util.Comparator;
 import java.util.Objects;
 
 import etf.unibl.org.bltv.model.news.NewsModel;

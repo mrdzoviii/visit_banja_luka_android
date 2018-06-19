@@ -106,7 +106,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> im
                     IFragment fragment= (IFragment) AppController.tabPager.getItem(item.getCategory());
                     ((ItemAdapter)fragment.getAdapter()).update(item);
                     ((ItemAdapter)AppController.tabPager.getFavouritesFragment().getAdapter()).remove(item);
-                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.removed_from_fav), Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.removed_from_fav), Toast.LENGTH_SHORT).show();
                 } else {
                     item.setLiked(true);
                     new Thread(() -> {
@@ -114,7 +114,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> im
                     }).start();
                     holder.button.setBackgroundResource(R.drawable.ic_liked_48dp);
                     ((ItemAdapter)AppController.tabPager.getFavouritesFragment().getAdapter()).add(item);
-                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.added_to_fav), Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity, activity.getString(R.string.item)+" "+item.getTitle() + " "+activity.getString(R.string.added_to_fav), Toast.LENGTH_SHORT).show();
                 }
             });
         }
