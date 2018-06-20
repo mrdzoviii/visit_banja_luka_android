@@ -93,7 +93,6 @@ public class FavouritesFragment extends Fragment implements IFragment {
         recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-
         recyclerView.setAdapter(mAdapter);
         System.out.println("FAV ON START");
     }

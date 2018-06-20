@@ -18,6 +18,7 @@ import java.util.Locale;
 import etf.unibl.org.bltv.R;
 import etf.unibl.org.bltv.db.AppDatabase;
 import etf.unibl.org.bltv.task.NewsTask;
+import etf.unibl.org.bltv.task.SplashTask;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -32,33 +33,7 @@ public class SplashActivity extends AppCompatActivity {
         System.out.println("LANG SPLASH:"+lang);
 
         final Activity activity=this;
-        AsyncTask<Void,Void,Void> task=new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... voids) {
-                MainActivity.favItems.clear();
-                MainActivity.favItems.addAll(AppDatabase.getAppDatabase(activity).itemDao().getAllLiked());
-                SharedPreferences pref=getSharedPreferences("org.unibl.etf.bltv.db",MODE_PRIVATE);
-                if(pref.getBoolean("images_not_downloaded",true)){
-
-                    if(AppDatabase.getAppDatabase(activity).downloadImages()){
-                        pref.edit().putBoolean("image_not_downloaded",false).apply();
-                    }
-                }
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(Void aVoid) {
-                super.onPostExecute(aVoid);
-                if(AppController.mainActivity!=null){
-                    AppController.mainActivity.finish();
-                }
-                Intent intent=new Intent(activity,MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        };
-        task.execute(null,null);
+        new SplashTask().execute(this);
 
 
     }

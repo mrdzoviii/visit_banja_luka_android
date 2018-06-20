@@ -42,9 +42,6 @@ public class WeatherTask extends AsyncTask<Activity,Void,CurrentWeather> {
     protected void onPostExecute(CurrentWeather currentWeather) {
         super.onPostExecute(currentWeather);
         if(currentWeather!=null){
-            /*ImageView icon=context.findViewById(R.id.icon);
-            GlideApp.with(AppController.cacheContext).load(context.getString(R.string.pull_icon)+currentWeather.getWeather().get(0).getIcon()+".png")
-                    .into(icon);*/
             TextView temp=context.findViewById(R.id.current_temp);
             temp.setText(getCelsius(currentWeather.getMain().getTemp())+context.getString(R.string.celsius));
             TextView humidity=context.findViewById(R.id.humidity);
